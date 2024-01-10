@@ -3,4 +3,4 @@ project(DesignPatterns)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DesignPatterns main.cpp Singleton)
+add_executable(DesignPatterns main.cpp Singleton TemplateMethod Prototype)

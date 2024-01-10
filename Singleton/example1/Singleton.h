@@ -2,7 +2,6 @@
 #ifndef DESIGNPATTERNS_SINGLETON_H
 #define DESIGNPATTERNS_SINGLETON_H
 
-// objektni uzorak stvaranja
 class Singleton {
 public:
     static Singleton* getInstance();
