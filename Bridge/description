@@ -1,0 +1,23 @@
+Objektni uzorak strukture
+
+Druga imena: Ručka/Telo; Handle/Body
+
+Namena:
+- Razdvaja apstrakciju od njene implementacije da bi mogle nezavisno da se menjaju
+
+Primenljivost, treba koristiti kada:
+- Treba da se izbegne trajno vezivanje apstrakcije i njene implementacije
+- I apstrakciji i implementaciji je potrebno proširivanje kroz potklase
+- Promena u implementaciji apstrakcije ne sme da utiče a klijente
+- Ako je potrebno potpuno sakrivanje implementacije klase od klijenta
+- Ako postoji opasnost od prevelikog broja klasa
+
+Apstrakcija:
+- Definiše ugovor apstrakcije
+- Održava referencu na objekat implementacije
+FinijaApstrakcija:
+- Implementira ugovor apostrakcije
+Implementacija:
+- Definiše ugovor klasa implementacije
+KonkretnaImplementacija:
+- Implementira ugovor implementacije, definiše konkretnu implementaciju

@@ -1,0 +1,31 @@
+Objektni uzorak ponašanja
+
+Druga imena: Akcija, Transakcija
+
+Namena:
+Kapsulira zahtev u jedan objeat, omogućavajući:
+- Da se pokretači izvršenja parametrizuju različitim zahtevima
+- Da se zahtevi isporučuju pokreačima kroz red čekanja
+- Da se pravi dnevnk zahteva
+- Da se efekti izvršenog zahteva ponište
+
+Uzorak treba koristiti kada je potrebno:
+- Da se objekti parametrizuju akcijom koju treba da obave
+- Specificirati i stavljati u red čekanja zahteve, a kasnije iz izvršavati
+- Podržati mehanizam undo/redo
+- Podržati oporavak u slučaju kraha
+- Podržati transakcije
+
+Učesnici:
+Komanda:
+- Deklariše ugovor za izvršenje neke operacije
+KonkretnaKomanda:
+- Definiše vezu između jednog objekta Primalac i konkretne akcije
+Klijent:
+- Kreira objekat KonkretnaKomanda, i može da postavi njenog primaoca.
+Pokretač:
+- Traži od Komande da izvrši operaciju
+Primalac:
+- Izvršava konkretnu akciju kojom se ispunjava zahtev
+
+

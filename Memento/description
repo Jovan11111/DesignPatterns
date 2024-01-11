@@ -1,0 +1,21 @@
+Objektni uzorak ponašanja
+
+Druga imena: Uspomena, Žeton, Token
+
+Koristi se kada treba napraviti snimak satnja nekog objeta da bi se to stanje kasnije restauriralo.
+Koristi se kada bi direktan ugovor za dobijanje stanja subjekta eksponirao njegove implementacione detalje
+
+Podsetnik:
+čuva unutrašnje stanje objekta Subjekat
+ne dozvoljava pristup drugim objektima osim objektu Subjekat
+ima uzak interfejs ka Čuvar, a širok ka Subjekat
+
+Subjekat:
+kreira objekat Podsetnik koji sadrži snimak njegovog tekućeg stanja
+ima diskreciono pravo da odluči koji deo stanja se čuva
+koristi objekat Podsetnik da restaurira stanje
+
+Čuvar:
+odgovoran za bezbedno čuvanje objekta Podsetnik
+ne ispituje i ne koristi stanje objekta Podsetnik
+prosleđuje podsetnika subjektu za restauraciju stanja

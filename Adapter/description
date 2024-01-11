@@ -1,0 +1,34 @@
+Klasni i objektni uzorak strukture
+
+Druga imena: Omotač, Wrapper(objektni samo)
+
+Namena: konvertuje interfejs klase u drugi interfejs koij klijenti očekuju
+
+Objektni: agregacija iz Adaptiranog u adapter
+Klasni: implementacija interfejsa Cilj, i nasleđivanje Adaptiranog
+
+Uzorak se koristi kada postoji potreba da se koristi neka raspoloživa klasa koja nema interfejs koji odgovara
+Objektni adapter treba koristiti i kada treba koristiti nekoliko postojećih klasa, ali je nepraktično adaptirati
+    njihove interfejse višestrukim izvođenjem iz svake od tih klasa
+
+Cilj:
+- definiše domenski-specifičan interfejs koji koristi klijent
+Klijent:
+- sarađuje sa objektima koji poštuju interfejs cilj
+Adaptirani:
+- definiše postojeću implementaciju sa drugačijim interfejsom koji zahteva adaptiranje
+Adapter:
+- adaptira interfejs Adaptirani na interfejs Cilj
+
+Klasni adapter:
+- Ne odgovara kada se želi istovremeno adaptiranje više potklasa neke klase
+- Dopušta adapteru kao potklasi da redefiniše metode adapirane natklase
+- Uvodi samo jedan objekat i nema potrebe za dodatnom indirekcijom
+Objektni adapter:
+- Dopušta jednom adapteru da radi sa hijararhijom adaptiranih klasa
+- moguća je dinamička promena adaptiranog objekta iz hijararhije klasa
+- Identitet ciljanog objekta i adaptiranog objekta se razlikuje
+
+Dvosmerni adapter zadržava interfejs i Adaptirani, objekat se može korisitti i kao Cilj i kao Adaptirani
+
+

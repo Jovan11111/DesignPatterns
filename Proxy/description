@@ -1,0 +1,27 @@
+Objektni uzora strukture
+
+Druga imena: Predstavnik, Zamena, Surogat
+
+Namena:
+Realizuje zamenu drugog objekta koji kontroliše pristup originalnom objektu, ili odlaže punu cenu stvaranja
+        originalnog objekta do trenutka kada je zaista potreban
+
+Uzorak se koristi kada postoji potreba za sofističnom referencom na objekat
+
+Vrste zastupnika:
+Udaljeni Zastupnik:
+- Obezbeđuje lokalnog predstavnika objekta koji se nalazi u drugom adresnom prostoru
+Virtuelni Zastupnik:
+- Stvara relativno skup objekat na zahtev
+Zaštitni zastupnik:
+- Kontroliše pravo pristupa originalom objektu
+
+Učesnici:
+Subjekat:
+- Zajednički interfejs za Original i njegovog Zastupnika
+Zastupnik:
+- Čuva referencu na original, realizuje interfejs subjekta
+Original:
+- Realni subjekat koji je predstavljen zastupnikom
+
+Mana: uvodi se jedan nivu indirekcije u pristup objektu

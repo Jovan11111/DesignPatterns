@@ -1,0 +1,20 @@
+Objektni uzorak ponašanja
+
+Namena:
+- Definiše objekat koji kapsulira interakciju skupa objekata i omogućava slabo sprezanje skupa objekata
+
+Uzorak treba koristiti kada:
+- Skup objekata komunicira na dobro definisan ali složen način
+- Je repupotreba objekata teška zato što komuniciraju sa mnogim drugim objektima
+- Treba da se omogući prilagođavanje ponašanja distribuiranog na više klasa, a da se izbegne mnogo potklasa
+
+Učesnici:
+Posrednik:
+- Definiše interfejs za komunikaciju sa objektima kolega
+KonkretanPosrednik:
+- Implementira spregnuto ponašanja koordiniranjem objekata kolega
+- Poznaje i pamti kolege
+Kolega:
+- Interfejs za konkretne kolege, poznaje samo klasu posrednik
+KonkretanKolega:
+- Nasleđuje poznavanje klase Posrednik i šalje i prima zahteve od posrednika
