@@ -1,0 +1,52 @@
+Dijagram klasa prikazuje skup klasa interfejsa i ostalih stvari strukture. Sastoji se iz stvari povezanih relacijama.
+Specifira logičke i statičke aspekte modela. Dijagrami klasa su najčešći i najnomrlaniji
+
+Klasifikator je klasifikacija primerka sa zajedničkim odlikama, apstraktna metaklasa. Konkretni klasifikatori us klase, interfejsi, komponente, čvorovi, itd
+Konkretni klasifikator predstavlja prostor imena, može da bude specijalizacija ili generalizacija drugog i može da bude ugnježden u drugi
+
+Klasa je opis skupa objekata koji dele iste odlike ograničenja i semantike. Klasa kad se nacrta je primerak metaklase Class.
+Klasa može da implementira interfejse, i klase predstavljaju konkretne softverske stvari, ali samo logičke
+Klasa se crta ko jedan pravougaonih sa delovima za naziv, atribute, operacije, i odgovornosti. Ime može da bude samo ime ili da sadrži cleu putanju.
+Odgovornosti klase su tu onako usput, neformalno, u odeljku responsibilities. Iako nema potrebe, ne bi bilo loše da svaka klasa ima barem jednu odgovornost
+Atributi su svojstva klase, članovi podaci, polja itd. mogu da imaju podrazumevane vrednosti
+Operacije su usloge klase, njeno ponašanje. Posebne operacije su konstrukturi i destruktori <<Create>>, <<Destroy>>. Pišu se tako što se stavi ime, i onda listu parametara i njihovih tipova, i onda na kraju koji tip operacija vraća, ako vraća void ne piše se ništa
+Ako klasa u nekom odeljku nema ništa, ne znači da stvarno nema ništa, nego je to samo tako nacrtano u tom modelu, može da se stavi ... da se naglasi da klasa u tom odeljku ima nešto al da je trenutno nevažno, al ne mora. Atributi i operacije mogu da se grupišu pod nekim stereotipom, čisto da bi bilo preglednije, npr  <<construcor>> i onda se u tu grupu napišu svi konstrukturi
+Apstraktna klasa je piše italikom, Statički atributi klase se podvlače, članovima/članicama klasa se pravo pristupa gleda tako što se gleda koji je znak ispred imena (+ javni, # zaštićeni, ~ paketski, -privatni)
+Ako treba da se ograniči broj klasa, u gornjem desnom uglu se napiše multiplikativnost. Uslužna klasa se označava sa <<Utility>>. U odeljku naziva klase može da se napiše {root} ili {leaf} šta bi znači da klasa neam roditelje, ili klasa nema decu
+Atributi mogu da imaju neke osobine, npr:
+ - readOnly ne može da se menja
+ - ordered znači da su vrednosti elemenata uređene
+ - unique znači da je svaki element jedinstven po vrednosti
+ - bag - unordered nonunique - nabacano ko u vreću
+ - sequence - ordered nonunique
+ - id - taj atribut je primarni ključ
+Operacije mogu da imaju i smer (in, out, inout), i isto mogu da imaju osobine, i to:
+ - query je kad nema bočnih efekata
+ - exception list - naznačava se koje izuzetke hvata klasa
+ - laef - operacija je final, nema nadjačavanja
+ - redefines op - redefiniše se roditeljska klasa
+ - concurency = sequential ili guarded ili concurent je da se operacija izvršava u jednoj niti, da je zaštićena ili da se izvršava ko atomska
+
+Aktivna klasa ima aktivne objekte kod kojih svaki ima svoj tok kontrole. Crtaju se tako što se na klasu dodaju još dve vertikalne linije odmah do ivica pravougaonika, i mogu da imaju deo receptions gde stoji koje signale primaju ili šalju
+
+Tipovi podataka se crtaju tako što se nacrta pravougaonik, ime i onda jedan od stereotipa:
+- <<dataType>> su primerci koji imaju neku vrednost ali nemaju identitet
+- <<ebnumeratoin>> su nabrajanja, zna se šta je to
+- <<primitive>> su postojeću tipovi podataka u jeziku u kom će se implementirati model
+
+Izuzeci su u UML1 signali, a u UML dva klase. Dodaje im se stereotip <<Exception>> i onda kada neka klasa baca izuzetak, ona ima zavisnost ka izuzetku, i zavisnost ima stereotip <<Send>>
+
+RELACIJE NA DIJAGRAMU KLASA
+Zavisnost povezuje stvari gde jedna stvar zavisi do druge.
+A - - - - > B čita je A zavisi od B. Često se koristi kada je B neki return u A operaciji, ili atribut ili bilo šta
+Generalizcija se zna šta je, nema potrebe objašnjavati milion puta
+A ------D B čita se A izvedeno iz B
+Asocijacija specifira da li su primerci jedne stvari povezani sa primercima druge stvari, strukturna relacija. Asocijacija može da bude jednosmerna i dvosmerna, objekat može da bude u relaciji sam sa sobom, crta se kao obična linija
+Asocijacija može da ima ukrase kao što su naziv, smer, uloge, navigabilnost, multiplikativnost, sadržanje, pravo pristupa itd.
+Multiplikativnost: Koliko objekata te klase vidi objekat druge klase? i tako se odredi koji broj treba da bude
+Agregacija: Služii da se pokaže odnos celina-deo, al ne ekskluzivni, može deo bez celine može celina bez dela. Na strani celine se nacrta romb
+Kompozicija: kao agregacija, al sad ako nema celine, nema ni dela. Deo pripada samo jednoj celini. Crta se na strani celine popunjen romb, crn
+Pravo pristupa: Ako bi objekat sa te strane bio atribut u klasi sa druge strane, jel bi on bio privatan, javan ili šta god? Tako ja razumem
+Ugnježdavanje se označava sa čudnim krugom i plusem u njemu, označava da je jedna klasa deklarisana u pristoru imena druge klase. Na strani okružujuće se crta krug.
+
+Realizacija se isto zna šta je i kak se crta, jako je lako prepoznati interfejs jer je lopta a ne pravougaonik, i to je to
