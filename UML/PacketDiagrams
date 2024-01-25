@@ -1,0 +1,16 @@
+Diagrami paketa se koriste da prikažu dekompoziciju modela u oragnizacione jedinice i uzajamne zavisnosti tih jedinica. Korisni su da bi se uočile zavisnosti između logičkih celina, i da bi se lakše izbegle kružne zavisnosti
+Paket je organizaciona stvar koja se koristi za grupisanje elemenata. Predstavlja prostor imena u koji mogu da se stvaljaju stvari i drugi paketi. 
+Paket je opšti mehanizam za organizovnanje elemenata u grupe koji uspostavlja vlasništvo nas elementima i obezbeđuje jedinstvenost imena elemenata. 
+Paketi se koriste zagrupisanje logičkih i fizičkih stvari u modelu.
+Ime nečega u modelu mora da bude jedinstveno, a puno ime nečega obuhvata i imena paketa u kome se to nalazi, npr paket::podpaket::podatak. Nekvalifikovanim imenima se može obraćati elementima koji pripadaju tom paketu, koji su uvezeni, ili koji su iz obuhvatajućih paketa. Svaki element ima vlasnika. Ako je paket nekome vlasnik i on se ukloni, ide i to kojem je paket vlasnik. Element u paketu može imati javno i privatno pravo pristupa. Kada se paket izvozi, on izvozi svoj javni sadržaj.
+Paket se crta kao folder. Njegovi elementi mogu da se nacrtaju unutar njega samog, ili kao da ih on sadrži, itd.
+U dijagramu paketa postoje zavisnosti sa stereotipima <<import>>, <<access>>, <<merge>>. import je javno uzvoženje, kada se neki paket uvozi, on šalje svoje javne elemente, i oni u drugom paketu ostaju javni. access je privatno uvoženje, paket šalje svoje javne elemente, al oni u drugom paketu postanu privatni elementi
+C - - - > A se čita "C uvozi A", C koristi stvari iz a
+merge je trenutno nebitan, koristi se u metamodeliranju, i nije interesantan
+Kada se projektuju paketi, treba razmišljati o sledećem:
+  - dobro je apstrakcije grupisati slojevito
+  - izbegavati kružnu zavisnost
+  - U istom paketu treba da budu klase koje se menjaju iz sličnih razloga
+  - U istom paketu treba da budu klase koje se koriste zajedno
+  - Treba suziti javni interfejs paketa da se ne bi izvozilo sve i svašta. To se radi korišćenjem uzorka fasada.
+Posebne vrste paketa su <<model>> koji predstavlja ceo model, semantički pun opis, sve super, i <<Framework>> koji predstavlja samo generičku arhitekturu koja se koristi za nešto, i koja treba da se proširi
