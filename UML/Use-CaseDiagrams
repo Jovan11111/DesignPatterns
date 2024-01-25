@@ -1,0 +1,13 @@
+Dijagram slučajeva korišćenja prikazuje skup slučajeva korišćenja i aktera. Uglavnom je neki skup funkcionalnosti
+Služi korisniku da razume, a verifikatoru da proveri. 
+Elementi dijagrama slučajeva korišćenja su slučajevi korišćenja, akteri, relacije i paketi
+Slučaj korišćenja je opis skupa sekvenci akcija uključujući varijante, koje subjekat obavlja da bi proizveo neki rezultat. Jedna akcija je jedan scenario. Slučaj korišćenja govori saom šta subjekat radi, ne kako. Crta se kao elipsa
+Postoje primarni i alternativni tokovi događaja, koji se opisuju ili neformalnih tekstom, ili strukturiranim tekstom, pesudokodom, dijagramima stanja interakcije ili aktivnosti, kako god.
+Akter predstavlja neki koherentan skup uloga, to može da bude korisnik, ili sistem. Subjekat interaguje sa više aktera. Označava se ili simbolom čovečuljka, ili klasom koja ima stereotip <<actor>>
+Relacija komunikacije se prikazuje punom linijom, može da je inicira akter, ili slučaj korišćenja. Relacija može da postoji između aktera i slučaja, ili dva slučaja korišćenja. Moguće je postaviti multiplikativnost na strani aktera ako ih je više potrebno
+Između dva slučaja korišćenja može da se stavi veza koja ima stereotip <<include>> što bi značilo da jedan slučaj uključuje i drugi. Kada se dešava jedan desiće se i drugi unutar njega.
+A ----> B se čita kao "A uključuje B, kada se desi A, desiće se i B"
+Takođe može da bude i proširivanje <<extend>> što bi bilo da jedan slučaj proširuje drugi. Tada nije obavezno uključivanje kao gore, već jedan slučaj može a i ne mora da obuhvati drugi
+A ----> B se čita kao "A proširuje B, kada se desi B, možda će se desiti A i proširiti ga"
+Tačke proširenja, extension points se dodaju kada postoji ovo extend, da bi se znalo kada se to proširuje slučaj, ispod elipse se doda linija i ispod linije se pišu mesta gde se proširuje slučaj. Označava se sa ime [: objašnjenje]
+Postoji i relacija generalizacije, al to se zna šta je, kada je jedan slučaj specijalni slučaj drugog. Npr identifikacija može da bude otiskom prsta, face recognitionom ili nekom šifrom. Ništa se ne proširuje samo ima jedan opšti slučaj i njegova deca specifični slučajevi. Generalizacija može da se javi i među akterima
