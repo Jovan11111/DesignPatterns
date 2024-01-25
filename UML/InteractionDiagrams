@@ -1,0 +1,51 @@
+Interakcija je ponašanje koje obuhvata skup poruka koje se razmenjuju između skupa učesnika. To je interakcija ponašanja koja se fokusria na uočljivu razmenu informacija izmeću povezanih elemenata
+Interakcija se koristi za modelovanje dinamičkih aspekata modela. 
+Kontekst interakcije može da bude ceo sistem, samo operacija, klasa, ili slučaj korišćenja
+Poruka je specifikacija komunikacije između objekata koja prenosi informaciju, iza koje se očekuje da sledi aktivnost. Aktivnost se dešava tamo gde je primljena poruka
+Poruka može da bude sinhrona i asinhrona, i prikazuje se na dijagramu interakcije kao strelica, al ima dosta različitih strelica
+Postoje 4 vrste dijagrama interakcije:
+1. Dijagrami sekvence naglašavaju vremensko uređenje interakcije
+2. Dijagrami komunikacije naglašavaju strukturu između učesnika u interakciji, pre su se zvali dijagrami saradnje.
+3. Dijagrami pregleda interakcije kombinuju dijagram aktivnosti i dijagram sekvence.
+4. Vremenski dijagrami prikazuju promenu stanja učesnika u vremenu.
+
+Linija života je prikaz jednog učesnika u interakciji. Učesnik je objekat.
+U UML1 to su bili stvarni konkretni objekti koji su bili podvučeni imali su ime i sve, u UML2 je malo rlaksiranije, to su više uloge. Mogu da postoje i "objekti" apstraktnih klasa, ništa se ne podvlači, mogu da budu anonimni itd.
+Konektori su komunikacije između učesnika. Konektor može da bude privremen. Postoje i ukrasi koji mogu da se postave na konektore, to bi bili:
+  - {association}, drugoj strani se pristupa preko veze
+  - {self}, učesnik sam sebi šalje poruku
+  - {global}, druga strana je u okružujućem dosegu imena
+  - {local}, druga strana je u lokalnom dosegu imena
+  - {parameter}, druga strana je argument operacije
+Vrste poruka:
+  - poziv - pokreće operaciju primaoca sinhrono (normalna strelica)
+  - odgovor - vraća vrednost pozivaocu (isprekidana strelica prazne glave)
+  - slanje - asinhrono se šalje signal primaocu (normalna strelica prazne glave)
+  - stvaranje - stvara se objekat (isprekidana prazne glave sa stereotipom <<Create>>)
+  - uništavanje - uništava se objekat (normalna sa stereotipom <<Destroy>>)
+  - pronađena - ne zna se ko je poslao poruku (normalna, ima kružić na početku)
+  - izgubljena - ne zna se kome se šalje (normalna, ima kružić na kraju)
+
+Na dijagramu sekvence se može pretpostaviti da su poruke trenutne, pa su zato horizontalne, ako ne bi to smatrali, onda bi linije išle jako malo nadole
+Na dijagramu komunikacije nije lako prepoznati kojim redom se izvršavaju poruke, tako da treba da se stavlja redni broj ispred dvotačke i imena. ako je poziv asinhron, onda nema tu strukturu. Ovo može da se meša i sa nitima. Evo primera:
+3v.5.2:uradi() - pokrenuta je 3. aktivnost koja se grana konkurentno, ovde se radi o drugoj poruci u okviru 5. poruke pokrenute u niti v
+
+Na poruci zahteva osim imena može da se prikaže i lista argumenata, oni se navode poziciono ili imenovano. Isto kao podrazumevane vrednosti se navode, ako je imenovano super, ako je poziciono onda se koristi - kao džoker
+
+Životni vek učesnika veza ne mora da se poklapa sa trajanjem interakcije, isto važi i za veze. Zato se na njima mogu postaviti sledeće osobine: 
+  - {new} - nastaje u toku interakcije
+  - {destroyed} - uništava se u toku interakcije
+  - {transient} - nastaje i uništava se u toku interakcije
+
+Izrazi za iteracije i grananje se pišu iza broja za sekvenciranje poruke an bilo kom nivou ugnježđenja, to mogu biti ponavljanja, ili neku uslovi, ili se samo stavi * kao množina. paralelne iteracije se označavajui sa ||
+
+Mogu na dijagram da se dodaju i fragmenti, oni su najopštija jedinica interakcije i opisuju deo interakcije. Crta se pravougaonik ono onoga što spada u fragmet, i u gornji levi ćošak je jezičak na kom piše ime. Fragmenata ima raznih, i označavaju se kod imena, mogu imati oznake:
+  - sd - ništa najobičniji dijagram
+  - neg - ono što ne treba da se radi
+  - ref - referenca na drugu interakciju
+  - opt - opcioni, izvršava se samo ako je ispunjen uslov
+  - alt - bira se između više fragmenata
+  - loop - fragment se izvršava više puta
+  - break - izvršava se umesto ostatka okružujućeg fragmenta
+  - par - fragmenti se izvršavaju paralelno
+  - region - ovom fragmentu može samo jedna nit da pristupi u isto vreme
