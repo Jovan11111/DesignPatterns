@@ -1,0 +1,20 @@
+Automat stanja je ponašanje koje specifira stanja kroz koja prolazi neki primerak. 
+Dijagram stanja je graf koji prikazuje automat stanja. On se fokusira na Događajima vođeno ponašanje
+Kontekst može da bude objekat, slučaj korišćenja, akter, podsistem, ili metod.
+Dijagram stanja prikazuje stanja, pseudostanja, prelaze, događaje i akcije
+Stanje je situacija u toku životnog veka nekog entiteta u kojoj entite ima neko stanje, ispunjava neki uslov, ili obavalja neku aktivnost, ili čeka nešto. Može da se označi i referenca na neko stanje i onda se koristi na više mesta, oznčava se kao hari poter naočare
+Elementi stanja su:
+  - Ime - samo ime, govori koje je ime, ima poseban jezičak
+  - Ulazno ponašanje - šta se dešava kada objekat uđe u stanje
+  - Izlazni ponašanje - Šta se dešava neposredno pre nego što objekat izađe iz stanja
+  - Ponašaje - Šta se dešava dok je objekat u tom stanju
+  - Odloženi događaj - lista događaja koji se ne obrađuju dok j eobjekat u tom stanju već se stavljaju u red čekanja
+  - Unutrašnji prelazi - prelazi koji odbrađuju događaj a objekat ostane u istom stanju, drugačiji od samoprelaza jer ne radi       opet ulazno i izlazno ponašnje
+  - Podstanja - stanja koja postoje unutar datog stanja
+Prelaz je realcija između dva stanja, prelaz govori šta se desilo i kako, predstavlja se običnom strelicom na kojoj piše:
+događaj [uslov] / akcija - znači govori koji događaj je prouzrokovao promenu stanja, pod kojim uslovom se to desilo, i koja akcija se dešava na tom prelazu ako se dešava nešto
+Automati stanja mogu da ponašanje vežu potpuno za stanje, ili potpuno za entitet, onda su Murovi ili Milijevi. Automati stanja uglanvom nisu samo jedna od ove dve stvari, već ponašanje vezuju i za stanja i za prelaze
+Složeno stanje je ono koje ima unutrašnja stanja. Onda posotoji nadstavnje i ugnježdena stanja tj podstanja. Podstanja mogu biti sekvencijalna ili konkurentna
+Prelazi mogu da budu između podstanje međusobno, ili podstanja i stanja izvan nadstanja. Ako se u stanje ulazi direkno u nadstanje, onda mora postojati početni čvor da pokaže koje podstanje ide prvo, ako ide direktno u podstanje, onda ne mora
+Recimo da krenu da se obavljaju podstanje, izađe se van nadstanja i sad treba da se vrati nazad, al potrebno je krenuti od onog podstanja koje je poslednje rađeno, e onda se koristi simbol H u početnom stanju da pokaže da automat stanja pamti istoriju. Ako je obično H, pamti se taj novi podstanja, a ako ima H* onda se pamti i podstanje u podstanju u podstanju.. bilo koja dubina
+Konkurentna podstanja je kada se dva ili više automata obavljaju konkurentno. Kad je sekvencijalno, onda automat može da bude u samo jednom podstanju, kad je konkurentno, onda može da bude u svim podstanjima. Prelaz u konkurentnost je fork, a vraćanje u normalno je join.
