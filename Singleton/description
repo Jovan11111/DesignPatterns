@@ -1,0 +1,27 @@
+Ime:
+Unikat, Singleton
+
+Klasifikacija:
+Objektni uzorak stvaranja
+
+Namena:
+Obezbeđuje da klasa ima samo jedan objekat i daje globalnu tačku pristupa tom objektu
+
+Motivacija:
+Za neke klase potrebno je obrezbediti da imaju samo po jedan objekat, rešenje je da klasa sama bude odgovorna za jedinstvenost njenog objekta
+
+Primenljivost:
+Kada treba da postoji asmo jedan objekat klase, koja može da se proširi.
+Kada je potrebno da taj objekat bude pristupačan
+
+Učesnici:
+Unikat definiše operaciju primerak() kao statički metod, ovaj metod je odgovoran za kreiranje jednog objekta. Ovoj klasi konstruktor je zaštićen ili privatan
+
+Posledice:
+Kontolisani pristup do jedinog objekta
+Rasterećenje prostora imena
+Dozvoljeno doterivanje operacija
+Moguće kontrolisano povećanje broja objekata
+
+Povezani uzorci:
+Apstraktna Fabrika, Graditelj, Fasada koriste Unikat
