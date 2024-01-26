@@ -1,0 +1,32 @@
+Ime:
+Strategija, Politika, Strategy, Policy
+  
+Klasifikacija:
+Objektni uzorak ponašanja
+  
+Namena:
+Definiše familiju algoritama, kapsulirajući svaki, i čini ih međusobno zamenljivim u vreme izvršenja
+
+Primenljivost:
+Kada bi se više srodnih klasa razlikovalo samo po nekom ponašanju
+Kada su potrebne različite varijane nekog algoritma
+Kada algoritam koristi podatke o kojima ni kontekst ne treba ništa da zna
+Kada klasa konteksta definiše više ponašanja koja se pojavljuju kao grane uslovne naredbe u raznim operacijama
+
+Učesnici:
+Strategija deklariše zajednički ugovor za sve podržane algoritme
+KonkretnaStrategija implementira konkretan algoritam tako da odgovara ugovoru klase Strategija
+Kontekst ima referencu na objekat tipa Strategija, a konfigurisan je objektom KonkretneStrategije. Može da pruži ugovor koji omogućava obojektu strategije da pristupi njegovim podacima
+
+Posledice:
+Implementacija familije srodnih algoritama kao hijerarhije klasa
+Fleksibilna alternativa izvođenju iz klase Kontekst
+Strategije smanuju potrebu za uslovnim naredbama
+Dinamički izbor implementacija algoritma
+Loše:
+Klijenti moraju da budu svesni strategije kojom parametrizuju kontekst
+Kontekst šalje nepotrebne parametre za neke konkretne strategije
+Povećava se broj objekata u aplikaciji
+
+Povezani uzorci:
+Objekti strategije često predstavljaju objekte Muve
