@@ -1,0 +1,28 @@
+Ime:
+Sastav, Sklop, Kompozicija, composite
+
+Klasifikacija:
+Objektni uzorak strukture
+
+Namena:
+Komponuje objekte u strukturu stabla i omogućava klijentima da isto tretiraju objekte i skupove objekata
+
+Primenljivost:
+Kada postoje hijerarhije objekata celina-deo takve da su celina i deo iste vrste
+Klijenti mogu da ignorišu razlike između sklopova i objekata
+
+Učesnici:
+Element deklariše zajednički interfejs za sve objekte, implementira podrazumevano ponašanje, deklariše interfejs za pristup i upravljanje decom, implementira prazne metode za pristup i upravljanje decom, opciono deklariše i implementira interfejs za pristup roditelju
+List reprezentuje listove u stablu, definiše ponašanje za jednostavne objekte
+Sklop definiše ponašanje za objekte koji imaju decu, sadrži komponente i implementira operacije za upravljanje decom
+Klijent manipuliše objektima u stablu kroz interfejs klase Element
+
+Posledice:
+Uzorak čini upotrebu programa jednostavnijim za klijente
+Uzorak čini jednostavnim dodavanje nove vrste elemenata
+Nije jednostavno ograničiti vrste elemenata koje neki čvorovi sadrže
+
+Povezani uzorci
+Veza dete-roditelj se koristi u Lancu odgovornosti
+Iterator se koristi za obilazak strukture sastava
+Posetliac se koristi sa Sastavom da lokalizuje operacije i ponašanje koje bi inače bilo distribuirano između klasa sklop i list
