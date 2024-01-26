@@ -1,0 +1,27 @@
+Ime:
+Dekorater, Dopuna, Omotač, Wrapper, Decorator
+  
+Klasifikacija:
+Objektni uzorak strukture
+
+Namena:
+Dinamički dodaje odgovornosti nekom objektu
+Fleksibilna altrenativa izvođenju za proširljive funkcionalnosti
+
+Primenljivost:
+Kada je potrebno dinamički dodavati odgovornosti objektima na transparentan način
+Kada proširenje izvođenjem nije praktično 
+
+Učesnici:
+Komponenta definiše interfejs za objekte kojima mogu da se dinamički dodaju odgovornosti
+Subjekat definiše objekat kojem se dodaju odgovornosti
+Dopuna održava rederencu na objekat klase Komponenta i nasleđuje njen interfejs
+KonkretnaDopuna dodaje odgovornosti objektu tipa Komponenta
+
+Posledice:
+Veća fleksibilnost od statičkog nasleđivanja, izbegavanje eksplozije klasa, izbegavanje bogato parametrizovanih klasa
+Identitet dekoratera i dekorisanog objekta su različiti
+Objekti se ne razlikuju po klasu već po načinu povezivanja
+Nasleđeni atribut iz klase Komponenta je duplikat u svakoj dopuni, trebalo bi da Komponenta nema atribute
+
+Povezani uzorci:
