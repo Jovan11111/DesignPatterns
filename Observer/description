@@ -1,0 +1,26 @@
+Ime:
+Posmatrač, Zavisni objekti, Objavljivanje-Pretplata, Pretplata-Obaveštenje, Dependents, Publish-Subscribe, Subscribe-Notify, Observer
+  
+Klasifikacija:
+Objektni uzorak ponašanja
+  
+Namena:
+Definiše 1:n zavisnost između objekata takvu da kada se jedan objekat promeni, svi zavisni objekti se obaveste i modifikuju automatski
+  
+Primenljivost:
+Kada jedna apstrakcija ima barem dva međusobno zavisna aspekta takva da promena jednog utiče na promenu drugih
+Kada izmena jednog objekta zahteva izmenu nepoznatog broja drugih objekata
+kada jedan objekat treba da signalizira promenu drugim objektima ne znajući prirodu tih objekata
+  
+Učesnici:
+Subjekat zna svoje posmatrače ali ne i njihovu prirodu, obezbeđuje interfejs za prijavljivanje i odjavljivanje posmatrača
+Posmatrač definiše interfejs za signaliziranje promena subjekta
+KonkretanSubjekat čuva stanje od interesa za konkretne posmatrače, šalje im signal o promeni stanja i omogućava čitanje stanja
+KonkretanPosmatrač poseduje referencu na konkretan subjekat, implementira operaciju preko koje mu subjekat signalizira promenu i čita stanje subjekta da bi promenio svoje stanje
+  
+Posledice:
+Apstraktno vezivanje izneđu subjekata i posmatrača, podrška za multikast 
+Nepoznata je cena promene jer se ne zna ko će sve trebati da se promeni, i koliko je to teško
+  
+Povezani uzorci:
+Može da se koristi posrednik između subjekta i posmatrača ako je potrebna neka zaštita ili delegiranje
