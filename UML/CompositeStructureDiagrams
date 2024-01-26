@@ -1,0 +1,6 @@
+Dijagrami složene strukture omogućavaju hijararhijsku dekompoziciju klasifikatora na delove njegove unutrašnje strukture, i omogućavaju korišćenje saradnji unutrar složene strukture. Unutrašnju strukturu imaju klase, komponente, i saradnje
+Portovi se povezuju sa zahtevanim i realizovanim interfejsima, i sa unutrašnjim delovima. Mogu da se prikažu polja koja postoje u klasifikatoru, npr kad je kompozicija atribut druge klase se prikaže kao mali pravougaonik as punom linijom, a ako je agregacija onda je isprekidana. 
+Konektor može da povezuje delove, je direktna veza ili veza preko zahtevanom i realizovanog interfejsa. Delegirajući konektor povezuje delove sa portovima, i to ako je deo prema portu, onda je realizovan interfejs, u suprotnom je zahtevani
+Saradnja opisuje strukturu elemenata koji saraćuju od kojih svaki obavlja neku funkciju da bi zajedno postigli nešto korisno. Između učesnika postoje konektori. Saradnja se crta kao isprekidana elipsa, gore se napiše ime, a ispod crtaš učesnike
+Kada se koristi neka saradnja negde, napiše se samo ime i ime cele saranje, onda se sa tom elipsom povezuju učesnici
+Može i da se nacrta i druga sa druim imenom, i onda da se poveže vezom saradnja sa saradnjom, učesnici sa učesnicima i na vezi se stavi stereotip <<occurence>>
