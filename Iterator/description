@@ -1,0 +1,37 @@
+Ime:
+Iterator, Kurzor i Cursor za specifičnu vrstu uzorka
+  
+Klasifikacija:
+Objektni uzorak ponašanja
+  
+Namena:
+Obezbeđuje pristup elementima zbirke redom, bez eksponiranja interne strukture zbirke
+
+Primenljivost:
+Da se podrže višestruki simultani obilasci agregata
+Da se obezbedi uniformni ugovor za obilazak različitih agregata
+Da se ni klijent ni agregat ne opterete načinom obilaska
+
+Učesnici:
+Agregat definiše ugovor za stvaranje objekata iteratora
+Iterator definiše ugovor za obilazak elemenata agregata i pristup tekućem elementu
+KonkretanAgregat implementira ugovor za stvaranje iteratora tako što vraća odgovarajući konkretan iterator
+KonkretanIterator nadjačava podrazumevanu implementaciju ugovora klase Iterator i čuva informaciju o tekućem elementu pri obilasku agregata
+
+Posledice:
+Pojednostavljuje interfejs agregata, obilazak je u klasi iterator
+Više od jednog obilaska može simultano da se sprovodi nad agregatom
+Podržava varijacije u obilasku agregata, različite obilaske
+
+Povezani uzorci:
+Iterator se često primenjuje za obilaske struktura Sastava
+Posmatrač se primenjuje za realizaciju robusnog Iteratora
+Polimorfni iteratori se zasnivaju na Fabričkom metodu
+Iterator može interno da koristi Podsetnik za čuvanje stanja iteracije
+  
+Implementacija:
+Kod spoljašnjeg iteratora, klijent kontroliše iterativni proces, na njemu je odgovornost za progres obilaska. Eksplicitno zahteva od iteratora pomeranje na sledeći element
+Kod unutrašnjeg iteratora, iterator kontroliše proces, klijent mu samo traži da se obavi neka operacija. Spoljašnji je fleksibilniji
+Može da se desi da agregat definiše algoritam obilaska, a da se onda iterator koristi samo da čuva stanje iteracije, taj iterator se zove Kurzor
+Može da se napravi Iterator takav da agregat zna sve svoje iteratore, i onda kada se nešto promeni u njemu (Doda se, ili ukloni element) on obavesti iteratore da ne bi došlo do problema visećeg pokazivača i slično. Koristi se projektni uzorak posmatrač, a ovaj iterator se zove Robusni
+Postoji i iterator koji se zove NullIterator i on na poziv operacije kraj() uvek vraca true, pogodan je za obradu graničnih uslova, ili pri obilasku stabla, gde bi listovi stabla uvek imali NullIterator
