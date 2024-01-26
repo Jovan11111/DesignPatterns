@@ -1,21 +1,24 @@
+Ime:
+Podsetnik, Uspoemna, Žeton, Token, Memento
+
+Klasifikacija:
 Objektni uzorak ponašanja
 
-Druga imena: Uspomena, Žeton, Token
+Namena:
+Snima i spolja čuva unutrašnje stanje nekog objekta, bez narušavanja njegove kapsulacije
+Omogućava da se objekat kasnije vrati u sačuvano stanje
 
-Koristi se kada treba napraviti snimak satnja nekog objeta da bi se to stanje kasnije restauriralo.
-Koristi se kada bi direktan ugovor za dobijanje stanja subjekta eksponirao njegove implementacione detalje
+Primenljivost:
+Kada treba napraviti snimak stanja nekog objekta da bi se stanje kasnije restauriralo
+Direktan ugovor za dobijanje stanje subjekta bi eksponirao njegove implementacione detalje
 
-Podsetnik:
-čuva unutrašnje stanje objekta Subjekat
-ne dozvoljava pristup drugim objektima osim objektu Subjekat
-ima uzak interfejs ka Čuvar, a širok ka Subjekat
+Učesnici:
+Podsetnik čuva unutrašnje stanje objekta Subjekat, ne dozvoljava pristup nikome sem objektu Subjekat i ima uzak interfejs ka Čuvaru, a širok ja Subjektu
+Subjekat kerira objekat Podsetnik koji sadrži snimak njegovog tekućeg stanja, ima pravo da odluči koji deo stanja čuva, i koristi Podsetnik da restaurira stanje
+Čuvar je odgovoran za bezbedno čuvanje objekta Podsetnik, ne korististanje Podsetnika, i proslećuje ga subjektu kada je potrebna restauracija
 
-Subjekat:
-kreira objekat Podsetnik koji sadrži snimak njegovog tekućeg stanja
-ima diskreciono pravo da odluči koji deo stanja se čuva
-koristi objekat Podsetnik da restaurira stanje
+Povezani uzorci:
+U Iteratoru Podsetnik može da se koristi za čuvanje podatka o tekućem elementu
+U Komandi Podsetnik može da se koristi za čuvanje stanja poništivih operacija
 
-Čuvar:
-odgovoran za bezbedno čuvanje objekta Podsetnik
-ne ispituje i ne koristi stanje objekta Podsetnik
-prosleđuje podsetnika subjektu za restauraciju stanja
+
