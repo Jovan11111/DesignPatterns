@@ -1,0 +1,28 @@
+Ime:
+Stanje, Objekti za stanja, State, Objects For States
+  
+Klasifikacija:
+Objektni uzorak ponašanja
+
+Namena:
+Omogućava objektu da pouzdano menja svoje ponašanje kada se menja njegovo unutrašnje stanje
+
+Primenljivost:
+Kada ponašanje objekta zavisi od stanja i mora da se menja u vreme izvršavanja
+Kada operacije imaju uslovne naredbe sa više grana, čije izvršenje zavisi od stanja objekta
+
+Učesnici:
+Kontekst definiše interfejs od interesa za klijente i održava referencu na objekat klase Stanje
+Stanje definiše interfejst za konkretna stanja
+KonkretnoStanje implementira interfejs stanja
+
+Posledice:
+Dobra kapsulacija ponašanja specifičnog za stanje
+Jasno razdvajanje ponašanja u različitim stanjima
+Jednostavno dodavanje novih stanja
+Prelazi između stanja su eksplicitni i atomični
+Objekti stanja mogu da budu deljeni jer nemaju atribute
+
+Povezani uzorci:
+Objekti stanja mogu da se realizuju kao Unikati
+Objekti stanja se mogu realizovati kao muve ako nemaju atribute ni stanje koje zavisi od spoljašnjeg
