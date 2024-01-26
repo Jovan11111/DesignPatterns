@@ -1,0 +1,31 @@
+Ime:
+Prototip, Polimorfna kopija, Prototype
+
+Klasifikacija:
+Objektni uzorak stvaranja
+
+Namena:
+Definiše specifične vrste objekata koje se stvaraju polimorfno kopiranje prototipskog primerka
+
+Motivacija:
+
+Primenljivost:
+Kada sistem treba da bude nezavisan od toga kako se njegovi proizvodi stvaraju i predstavljaju
+Kada treba da se izbegne izgradnja hijararhije fabrika paralelno sa hijararhijom proizvoda
+Kada se klase specifiraju u vreme izvršenja
+
+Učesnici:
+Prototip deklariše interfejs za sopstveno kloniranje, operaciju kopija()
+KonkretanPrototip implementira operaciju za sopstveno kloniranje
+Klijent stvara novi objekat zahtevom prototipu da se klonira
+
+Posledice:
+Smanjenje potrebe izvođenja
+Dodavanje i uklanjanje proizvoda u vreme izvršenja
+Dinamičko konfigurisanje aplikacije klasama
+Smanjivanje broja imena koje klijent treba da poznaje
+Loša strana:
+Svaka potklasa mora da implementira operaciju kopija() što može biti problem ako objekat klase sadrži podobjekte koji ne podržavaju kloniranje
+
+Povezani uzorci:
+Koristi se zajedno sa Sastavom i Dekoraterom
