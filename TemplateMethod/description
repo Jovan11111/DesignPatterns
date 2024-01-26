@@ -1,0 +1,30 @@
+Ime:
+Šablonski metod, Template method
+
+Klasifikacija:
+Klasni uzorak ponašanja
+
+Namena:
+Definiše skelet nekog algoritma, a delegira neke korake potklasama
+Omogućava potklasama da redefinišu korake algoritma bez izmene njegove strukture
+
+Motivacija:
+Šablonski metod definiše algoritam sastavljen od apstraktnih operacija, a potklase definišu operacije i time obezbeđuju konkretno ponašanje.
+
+Primenljivost:
+Da se implementiraju invarijantni delovi algoritma jednom, a da se delovi koji se menjaju ostave potklasama
+Kada je portebno izbegnuti dupliranje koda da bi se prikazalo zajedničko ponašanje potklasa
+
+Učesnici:
+ApstraktnaKlasa implementira šablon algoritma i deklariše apstraktne primitivne operacije za korake algoritma
+KonkretnaKlasa implementira primitivne operacije koje obavljaju delove algoritma na specifičan način
+
+Posledice: 
+Fundamentalna tehnika za reupotrebu koda
+Roditeljska klasa zove operacije dece
+
+Povezani uzorci:
+Fabrički metod se često poziva iz Šablonskog metoda
+
+Dodatno:
+Neke primitivne operacije mogu da se realizuju u apstraktnoj klasi, zovu se hook operacije
