@@ -1,22 +1,30 @@
+Ime:
+Graditelj, Builder
+
+Klasifikacija:
 Objektni uzorak stvaranja
 
 Namena:
 - Razdvaja proves upravljanja konstrukcijom složenog objekta od njegovog sklapanja u celinu
-- Isti proves konstrukcije može da stvara različite reprezentacije proizvoda
+- Isti proces konstrukcije može da stvara različite reprezentacije proizvoda
 
-Uzorak se koristi kada:
-- Algoritam za stvaranje složenog objekta treba da bude nezavisan od delova koji ga čine i od načina sklapanja
-- Proces konstrukcije mora da dopusti različite reprezentacije za objekat koji se konstruiše
+Primenljivost:
+Kada algoritam za stvaranje složenog objekta treba da bude nezavisan od delova koji ga čine i od načina sklapanja
+Kada proces konstrukcije mora da dopusti različite reprezentacije za objekat koji se konstruiše
 
 Učesnici:
-Graditelj:
-- Specifira apstraktan ugovor za stvaranje delova objekta Proizvod
+Graditelj specifira apstraktan ugovor za stvaranje delova objekta Proizvod
 KonkretanGraditelj:
-- Konstruiše i sastavlja delove proizvoda implementiranjem interfejsa Graditelj
-- Definiše i čuva proizvod koji stvara
-- Obezbeđuje interfejs za dohvatanje proizvoda
-Upravljač:
-- Konstruiše objekat koristeći interfejs Graditelj
-Proizvod:
-- Predstavlja složeni objekat koji se konstruiše
-- Uključuje klase koje definišu sastavne delove
+  - Konstruiše i sastavlja delove proizvoda implementiranjem interfejsa Graditelj
+  - Definiše i čuva proizvod koji stvara
+  - Obezbeđuje interfejs za dohvatanje proizvoda
+Upravljač konstruiše objekat koristeći interfejs Graditelj
+Proizvod predstavlja složeni objekat koji se konstruiše, uključuje klase koje definišu sastavne delove
+
+Posledice:
+Dopušta izmene interne reprezentacije i načina sklapanja složenog proizvoda, reprezentacija i način sklapanja su skriveni
+Izolovanje koda za konstrukciju i reprezentaciju, bolja modularnost, klijent ne zna o graditeljima
+Daje se finija kontrola nad procesom konstrukcije, proizvod se pravi korak po korak
+
+Povezani uzorci:
+Graditelj često gradi objekat Sastava
