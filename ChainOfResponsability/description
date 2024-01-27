@@ -1,20 +1,26 @@
+Ime:
+Lanac odgovornosti, Chain Of REsponsibility
+
+Klasifikacija:
 Objektni uzorak ponašanja
 
 Namena:
 - Povezuje objekte primaoce zahteva u lanac i prosleđuje zahtev niz lanac dok ga neki objekat ne obradi
 - Izbegava neposredno vezivanje pošiljaoca zahteva sa primaocem
 
-Uzorak treba da se primeni kada:
-- Više objekata može da obradi zahtev, ali ne zna se unapred koji od njih će da ga obradi
-- Kada treba da se izda zahtev jednom od nekoliko objekata a da se eksplicitno ne odredi primalac
-- Kada skup objekata koji obrađuju zahtev treba da se odredi dinamički
+Primenljivost:
+Kada više objekata može da obradi zahtev, ali ne zna se unapred koji od njih će da ga obradi
+Kada treba da se izda zahtev jednom od nekoliko objekata a da se eksplicitno ne odredi primalac
+Kada skup objekata koji obrađuju zahtev treba da se odredi dinamički
 
 Učesnici:
-Obrađivač:
-- Defniše ugovor obrade zahteva
-- Implementira vetu prema sledećem lancu (svi osim poslednjeg)
-KonkretanObrašivač:
-- Obrađuje zahteve ako ume, ako ne ume, prosleđuje sledbeniku
-- Može da pristupi sledbenicima u lancu
+Obrađivač defniše ugovor obrade zahteva i implementira vezu prema sledećem lancu (svi osim poslednjeg)
+KonkretanObrađivač obrađuje zahteve ako ume, ako ne ume, prosleđuje sledbeniku, može da pristupi sledbenicima u lancu
 
+Posledice:
+Rasprezanje Pošiljaoca i primaoca, oni ne znaju jedan od drugom
+Dodatna fleksibilnost u pružanju odgovornosti za obradu zahteva, odgovornosti se menjaju u vreme izvršenja
 Mana: Prijem nije zagarantovan, može da se desi da zahtev dođe do kraja lanca i ne obradi se
+
+Povezani uzorci:
+Često se primenjuje u Sastavu, roditelj komponente može da igra ulogu sledećeg u lancu
