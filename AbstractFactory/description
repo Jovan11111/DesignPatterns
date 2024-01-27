@@ -1,1 +1,32 @@
+Ime: 
+Abstraktna fabrika, Abrstact Factory, Kit
+
+Klasifikacija:
 Objektni uzora stvaranja
+
+Namena:
+Obezbeđuje ugovor za konzistentnu proizvodnju različitih varijanti familije povezanih proizvoda kojih klijent nije svesan
+
+Primenljivost:
+Kada sistem treba da bude konfigurisan jednom od više varijanti familije proizvoda
+Kada klijent treba da bude nezavisan od načina stvaranje proizvoda
+Kada je potrebno forisrati da se proizvodi jedne familije koriste zajedno
+Kada je potrebno ponuditi klasnu biblioteku proizvoda otkrivajući samo ugovore
+
+Učesnici:
+ApstraktnaFabrika deklariše ugovor za operacije koje stvaraju objekte proizvoda
+KonkretnaFabrika implementira operacije koje stvaraju objekte konkretnih proizvoda
+ApstraktanProizvod deklariše ugovor za određenu vrstu proizvoda
+KonkretanProizvod implementira ugovor apstraktnog proizvoda
+Klijent koristi samo ugovore deklarisane pomoću apstraktnih klasa
+
+Posledice:
+Apstrahovanje konkretnih klasa proizvoda
+Olašava se izmena familije proizvoda
+Unapređuje se konzistencija među proizvodima, jedna familija u jednom trenutku
+Mana: Teško dodati novi proizvod, treba da se menja fabrika
+
+Povezani uzorci:
+Implementira se Fabričkim metodom ili koristeći prototip
+Konkretna fabrika je često unikat
+Konkretna fabrika je konkretna strategija stvaranja familije proizvoda
