@@ -1,0 +1,26 @@
+Ime:
+Fasada, Facade
+  
+Klasifikacija:
+Objektni uzorak strukture
+  
+Namena:
+Pružanje jedinstvenog interfejsa podsistema, tj. definisanje interfejsa višeg nivoa da bi se podsistem lakše koristio
+
+Primenljivost:
+Kada je potrebno dati jednostavan interfejs složenom sistemu, da klijent ne bi morao da poznaje sistem nego samo njegov interfejs
+Kada postoje brojne zavisnosti između klijenta i klasa podsistema, previše komplikovano klijentu
+Kada postoji potreba da se rasloje podsistemi
+
+Učesnici:
+Fasada zna koje klase podsistema su odgovorne za šta, delegira zahteve klijenta odgovarajućim objektima podsistema
+Klase podsistema zapravo rade nešto, ne znaju ništa o fasadi
+
+Posledice:
+Smanjivanje broja objekata od kojih klijenti zavise
+Slabo vezivanje između podsistema i klijenata
+Klijent još uvek može da koristi klase podsistema direktno ako hoće
+
+Povezani uzorci:
+Apstraktna fabrika je Fasada za kreiranje objekata podsistema
+Fasada se realizuje kao Unikat
