@@ -1,27 +1,34 @@
+Ime:
+Zastupnik, Predstavnik, Zamena, Surogat, Surogate, Proxy
+
+Klasifikacija:
 Objektni uzora strukture
 
-Druga imena: Predstavnik, Zamena, Surogat
-
 Namena:
-Realizuje zamenu drugog objekta koji kontroliše pristup originalnom objektu, ili odlaže punu cenu stvaranja
-        originalnog objekta do trenutka kada je zaista potreban
+Realizuje zamenu drugog objekta koji kontroliše pristup originalnom objektu, ili odlaže punu cenu stvaranja originalnog objekta do trenutka kada je zaista potreban
 
-Uzorak se koristi kada postoji potreba za sofističnom referencom na objekat
+Primenljivost:
+Kada postoji potreba za sofističnom referencom na objekat
 
 Vrste zastupnika:
 Udaljeni Zastupnik:
-- Obezbeđuje lokalnog predstavnika objekta koji se nalazi u drugom adresnom prostoru
+- Obezbeđuje lokalnog predstavnika objekta koji se nalazi u drugom adresnom prostoru, zove se i ambasador
 Virtuelni Zastupnik:
 - Stvara relativno skup objekat na zahtev
 Zaštitni zastupnik:
 - Kontroliše pravo pristupa originalom objektu
 
 Učesnici:
-Subjekat:
-- Zajednički interfejs za Original i njegovog Zastupnika
-Zastupnik:
-- Čuva referencu na original, realizuje interfejs subjekta
-Original:
-- Realni subjekat koji je predstavljen zastupnikom
+Subjekat je zajednički interfejs za Original i njegovog Zastupnika, ovo se radi da bi Zastupnik mogao da se koristi kao Original
+Zastupnik čuva referencu na original, realizuje interfejs subjekta i kontroliše pristup originalu na već određen način (koji je drugačiji za druge vrste Zastupnka)
+Original je realni subjekat koji je predstavljen zastupnikom
 
-Mana: uvodi se jedan nivu indirekcije u pristup objektu
+Posledice:
+Uvodi se jedan nivo indirekcije pristupnom objektu
+Zastupnikom se implementira copy-on-write (ono kad se odlaže kopiranje nekog dela memorije nakon forka dok se on zvanično ne promeni)
+
+Povezani uzorci.
+Zastupnik koji implementira copy-on-write može da se koristi sa Prototipom
+
+Implementacija:
+Koristi se za pravljenje pametnog pokazivača, pokazivača koji pre pristupa obavi neke akcije kao što su brojanje referenci na objekat, provera da li je zaključan itd
