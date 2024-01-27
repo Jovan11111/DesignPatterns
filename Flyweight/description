@@ -1,26 +1,30 @@
-objektni uzorak strukture
+Ime:
+Muva, Flyweight
 
-Namena: deljenje objekata bez stanja, ili čije unutrašnje stanje ne zavisi od pojave u kontekstu.
-        Ovim se preventuje hiperprodukcija objekata
+Klasifikacija:
+Objektni uzorak strukture
 
-Koristi se ako su ispunjeni svi sledeći uslovi:
-- Aplikacija koristi veliki broj objekata istog tipa
-- Deo stanja tog objekta može da se prebaci u spoljašnje stanje
-- Kada se spoljašnje stanje ukloni, objekti postaju deljivi, i mogu da se zamene referencama ka deljenim objektima
-- Identitet objekta nije bitan
+Namena:
+Deljenje lakih objekata da bi se izbegla hiperprodukcija objekata. Laki objekti su oni koji nemaju stanje, ili čije spoljašnje stanje ne zavisi od promene u kontekstu
 
-Napomena: Klijenti ne stvaraju muve direktno, već postoji fabrika muva
+Primenljivost:
+Ako apliakcija koristi veliki broj objekata istog tipa
+Ako deo stanja objekta može da se prebaci u spoljašnje stanje
+Kada se ukloni spoljašnje stanje, objekti postaju deljivi
+Identitet objekta nije bitan
 
-Muva:
-- Deklariše ugovor kroz koji muva prima spoljašnje stanje
-KonkretnaMuva:
-- Implementira ugovor muve i dodaje atribute spoljašnjeg stanja
-- Objekti moraju biti deljivi
-NedeljenaKonkretnaMuva:
-- U hijararhiji ovi objekti nisu deljeni, nisu listovi. Čuvaju atribute spoljašnjeg stanja
-FabrikaMuva:
-- Stvara muve i čuva ih. Klijent zahteva muvu, a fabrika dohvata postojeću ili pravi novu
-Klijent:
-Održava reference na dodeljene muve, čuva ili izračunava spoljašnje stanje objekata muva
+Učesnici:
+Muva deklariše ugovor kroz koji muva prima spoljašnje stanje
+KonkretnaMuva implementira ugovor muve i dodaje atribute unutrašnjeg stanja, objekti moraju da budu deljivi
+NedeljenaKonkretnaMuva: u hijararhiji ovi objekti nisu deljeni, nisu listovi. Čuvaju atribute spoljašnjeg stanja
+FabrikaMuva stvara muve i čuva ih. Klijent zahteva muvu, a fabrika dohvata postojeću ili pravi novu
+Klijent održava reference na dodeljene muve, čuva ili izračunava spoljašnje stanje objekata muva
 
-Mana: Troškovi pronalaženja i izračunavanja spoljašnjeg stanja mogu da budu veliki
+Posledice:
+Ušteda u prostoru, smanjuje se broj objekata, i menja se odnos unutrašnjeg i spoljašnjeg stanja objekta
+Mana: Troškovi pronalaženja i izračunavanja spoljašnjeg stanja mogu da budu veliki, a to ne može da se zna
+
+Povezani uzorci:
+Kombinuje se sa uzorkom kompozicija tako što su nedeljene muve sklopovi, a konkretne listovi
+Stanja i Stretegije mogu biti muve
+Deljene muve mogu biti varijacije Unikata sa ograničenim brojem objekata
