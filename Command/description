@@ -1,31 +1,38 @@
-Objektni uzorak ponašanja
+Ime: 
+Komada, Akcija, Transakcija, Command, Action, Transaction
 
-Druga imena: Akcija, Transakcija
+Klasifikacija>
+Objektni uzorak ponašanja
 
 Namena:
 Kapsulira zahtev u jedan objeat, omogućavajući:
 - Da se pokretači izvršenja parametrizuju različitim zahtevima
 - Da se zahtevi isporučuju pokreačima kroz red čekanja
-- Da se pravi dnevnk zahteva
+- Da se pravi dnevnik zahteva
 - Da se efekti izvršenog zahteva ponište
 
-Uzorak treba koristiti kada je potrebno:
-- Da se objekti parametrizuju akcijom koju treba da obave
-- Specificirati i stavljati u red čekanja zahteve, a kasnije iz izvršavati
-- Podržati mehanizam undo/redo
-- Podržati oporavak u slučaju kraha
-- Podržati transakcije
+Primenljivost:
+Kada je potrebno da se objekti parametrizuju akcijom koju treba da obave
+Kada je potrebno specificirati i stavljati u red čekanja zahteve, a kasnije iz izvršavati
+Kada je potrebno podržati mehanizam undo/redo
+Kada je potrebno održati oporavak u slučaju kraha
+Kada je potrebno podržati transakcije
 
 Učesnici:
-Komanda:
-- Deklariše ugovor za izvršenje neke operacije
-KonkretnaKomanda:
-- Definiše vezu između jednog objekta Primalac i konkretne akcije
-Klijent:
-- Kreira objekat KonkretnaKomanda, i može da postavi njenog primaoca.
-Pokretač:
-- Traži od Komande da izvrši operaciju
-Primalac:
-- Izvršava konkretnu akciju kojom se ispunjava zahtev
+Komanda deklariše ugovor za izvršenje neke operacije
+KonkretnaKomanda definiše vezu između jednog objekta Primalac i konkretne akcije
+Klijent kreira objekat KonkretnaKomanda, i može da postavi njenog primaoca.
+Pokretač traži od Komande da izvrši operaciju
+Primalac izvršava konkretnu akciju kojom se ispunjava zahtev
+
+Posledice:
+Raspreže se objekat koji pokreće operaciju od onog koji zna da je izvrši
+Komande su objekti ko i svi ostali, može se njima manipulisati
+Komande mogu da se grupišu u složene komande, makrokomande
+Dodavanje novih komandi je lako, nema potrebe menjati postojeće klase
+
+Povezani uzorci:
+Kada se koristi sa sastavom onda nastaju Makrokomande
+Komanda čija se kopija stavlja u dnevnik ponaša se kao Prototip
 
 
