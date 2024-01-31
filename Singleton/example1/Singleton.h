@@ -8,7 +8,7 @@ public:
     static Singleton* getInstance();
 private:
     // Only instance of the class
-    static Singleton* primerak;
+    static Singleton* instance;
     // Private constructor
     Singleton();
 };
