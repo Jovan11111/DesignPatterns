@@ -1,8 +1,9 @@
-
 #include "Singleton.h"
 
+Singleton* Singleton::instance = nullptr;
+
 Singleton *Singleton::getInstance() {
-    if(this->primerak == nullptr)
-        this->primerak = new Singleton();
-    return primerak;
+    if(this->instance == nullptr)
+        this->instance = new Singleton();
+    return instance;
 }
