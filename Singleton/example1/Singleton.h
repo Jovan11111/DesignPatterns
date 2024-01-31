@@ -4,9 +4,12 @@
 
 class Singleton {
 public:
+    // Only method for accessing the instance
     static Singleton* getInstance();
 private:
+    // Only instance of the class
     static Singleton* primerak;
+    // Private constructor
     Singleton();
 };
 
