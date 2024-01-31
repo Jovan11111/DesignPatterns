@@ -25,6 +25,7 @@ Roditeljska klasa zove operacije dece
 
 Povezani uzorci:
 Fabrički metod se često poziva iz Šablonskog metoda
+Šablonski metod menja samo korake algoritma, dok Strategija menja ceo algoritam nekim drugim
 
 Dodatno:
 Neke primitivne operacije mogu da se realizuju u apstraktnoj klasi, zovu se hook operacije
