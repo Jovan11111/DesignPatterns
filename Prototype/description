@@ -29,3 +29,5 @@ Svaka potklasa mora da implementira operaciju kopija() što može biti problem a
 
 Povezani uzorci:
 Koristi se zajedno sa Sastavom i Dekoraterom
+Fabrički metod isto pravi objekte čiji tip klijent ne prepoznaje, al on to delegira potklasi, a Prototip drugom objektu
+Apstraktna fabrika može da se implementira prototipom
