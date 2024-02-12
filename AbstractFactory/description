@@ -1,3 +1,39 @@
+Title: 
+Abstract Factory, Factory Kit
+
+Classification:
+Object Creation Patterns
+
+Purpose:
+Provides a contract for consistently producing different variants of a family of related products that the client is not aware of.
+
+Applicability:
+When the system needs to be configured once from multiple variants of a product family.
+When the client needs to be independent of how products are created. 
+When it is necessary to enforce that products of one family are used together. 
+When it is necessary to offer a class library of products by revealing only the contracts.
+
+Participants:
+AbstractFactory declares a contract for operations that create product objects. 
+ConcreteFactory implements operations that create concrete product objects. 
+AbstractProduct declares a contract for a specific type of product.
+ConcreteProduct implements the contract of the abstract product.
+Client uses only contracts declared by abstract classes.
+
+Consequences:
+Abstraction of concrete product classes.
+Facilitates the modification of product families. 
+Enhances consistency among products, one family at a time.
+Drawback: Difficult to add a new product, the factory needs to be changed.
+
+Related patterns:
+Implemented by the Factory method or using the Prototype.
+The ConcreteFactory is often a Singleton.
+The ConcreteFactory is a concrete strategy for creating a family of products.
+
+
+SERBIAN TRANSLATION
+
 Ime: 
 Abstraktna fabrika, Abrstact Factory, Kit
 
