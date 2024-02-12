@@ -1,3 +1,40 @@
+Title:
+Bridge, Handle/Body
+
+Classification:
+Object Structure Pattern
+
+Other Names: Handle/Body
+
+Purpose:
+Separates an abstraction from its implementation so they can be changed independently.
+
+Applicability:
+When it is necessary to avoid permanently tying an abstraction to its implementation.
+When both the abstraction and its implementation require extension through subclasses.
+When changes in the abstraction implementation should not affect clients.
+If there is a need to completely hide the implementation class from the client.
+If there is a risk of having too many classes.
+When an implementation needs to be shared by multiple objects without the client knowing.
+
+Participants:
+Abstraction defines the abstraction contract and maintains a reference to the implementation object.
+RefinedAbstraction implements the abstraction contract.
+Implementation defines the contract of implementation classes.
+ConcreteImplementation implements the implementation contract, defines the concrete implementation.
+
+Consequences: 
+Separation of implementation from contract, no permanent binding.
+Better extension options, both hierarchies can be expanded independently.
+Hidding implementation details from the client, the client thus only sees the abstraction.
+
+Related Patterns:
+Abstract factory can create ConcreteImplementations with multiple Bridges.
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Most, Ručka/Telo, Bridge, Handle/Body
 
