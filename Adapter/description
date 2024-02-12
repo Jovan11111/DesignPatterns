@@ -1,3 +1,45 @@
+Title:
+Adapter, Wrapper (only for object adapter)
+
+Classification:
+Class and object structure pattern
+
+Purpose: 
+Converts the interface of a class into another interface that clients expect, thus enabling classes to work together that otherwise couldn't, through required and realized interfaces.
+
+Applicability:
+When there is a need to use an available class that does not have a suitable interface.
+When designing a reusable class that collaborates with unrelated or unforeseen classes, i.e., classes with incompatible interfaces.
+Specific for object adapters:
+If you need to use several existing classes, but it is impractical to adapt their interfaces by multiple inheritance from each of these classes.
+
+Participants:
+Target defines the domain-specific interface used by the client.
+Client collaborates with objects that comply with the Target interface.
+Adaptee defines an existing implementation with a different interface that needs adaptation.
+Adapter adapts the interface of the Adaptee to the Target interface.
+
+Consequences:
+Class adapter:
+- Not suitable for simultaneous adaptation of multiple subclasses of a class.
+- Allows the adapter as a subclass to redefine the methods of the adapted superclass.
+- Introduces only one object and no need for additional indirection.
+Object adapter:
+- Allows one adapter to work with a hierarchy of adapted classes.
+- Dynamic change of the adapted object from the class hierarchy is possible.
+- The identity of the target object and the adapted object differs.
+Bidirectional adapter:
+- An object can be used as both Target and Adaptee, achieving complete transparency.
+
+Implementation:
+Object: Aggregation from the Adaptee into the Adapter.
+Class: Implementation of the Target interface, and inheritance of the Adaptee.
+In C++, class is achieved by public inheritance from Target and private from Adaptee, and if a bidirectional adapter is needed, then all public.
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Adapter, Wrapper (samo za objektni adapter)
 
@@ -35,5 +77,3 @@ Implementacija:
 Objektni: Agregacija iz adaptiranog u adapter
 Klasni: Implementacija interfejsa cilj, i nasleđivanje adaptiranog
 U C++ klasni se realizuje javnim izvođenjem iz Cilj a privatnim iz Adaptirani, a ako je potreban dvosmerni, onda sve javno
-
-Povezani uzorci:
