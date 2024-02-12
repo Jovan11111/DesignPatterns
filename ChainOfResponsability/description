@@ -1,3 +1,34 @@
+Title:
+Chain of Responsibility
+
+Classification:
+Object Behavior Pattern
+
+Purpose:
+- Connects request receiver objects into a chain and passes the request down the chain until an object processes it.
+- Avoids directly binding the request sender to the receiver.
+
+Applicability:
+When multiple objects can handle a request, but it is not known in advance which one will handle it.
+When you need to issue a request to one of several objects without explicitly specifying the recipient.
+When the set of objects that process the request needs to be determined dynamically.
+
+Participants:
+Handler defines the contract for processing requests and implements the link to the next chain (all but the last one).
+ConcreteHandler processes requests if it is capable, if not, it forwards to the successor, it can access successors in the chain.
+
+Consequences:
+Decoupling Sender and Receiver, they do not know about each other.
+Added flexibility in assigning responsibility for processing requests, responsibilities change at runtime.
+Disadvantage: Receipt is not guaranteed, it may happen that the request reaches the end of the chain and is not processed.
+
+Related Patterns:
+Often applied in Composite, the parent component can play the role of the next in the chain.
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Lanac odgovornosti, Chain Of REsponsibility
 
