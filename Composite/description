@@ -1,5 +1,38 @@
+Title:
+Composite
+
+Classification:
+Object Structure Pattern
+
+Purpose:
+Composes objects into a tree structure and allows clients to treat individual objects and compositions of objects uniformly.
+
+Applicability:
+When there are whole-part object hierarchies such that the whole and part are of the same type.
+Clients can ignore the differences between compositions and individual objects.
+
+Participants:
+Component declares a common interface for all objects, implements default behavior, declares an interface for accessing and managing child components, implements empty methods for accessing and managing children, optionally declares and implements an interface for accessing a parent.
+Leaf represents leaves in the tree, defines behavior for primitive objects.
+Composite defines behavior for components that have children, stores child components, and implements child-related operations.
+Client manipulates objects in the composition through the Component interface.
+
+Consequences:
+The pattern makes the client's program simpler.
+The pattern makes it easy to add new types of elements.
+It is not easy to limit the types of components that nodes contain.
+
+Related Patterns:
+Child-parent relationship is used in Chain of Responsibility.
+Iterator is used to traverse the composite structure.
+Visitor is used with Composite to localize operations and behavior that would otherwise be distributed among Composite and Leaf classes.
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
-Sastav, Sklop, Kompozicija, composite
+Sastav, Sklop, Kompozicija, Composite
 
 Klasifikacija:
 Objektni uzorak strukture
