@@ -1,5 +1,0 @@
-Dijagram raspoređivanja prikazuje statičke i fizičke aspekte sistema, hardverski i softversku izvršnu arhitekturu sistema. On sadrži čvorove, artefakte, podsisteme, pakete, i relacije. Koristi se u modelovanju ugrađenih, klijent server, troslojnih, ili potpuno distribuiranih sistema
-Čvor je apstrakcija fizičkog objekta koji predstaclja resurs obrade, može da bude procesor, ili okruženje, crta se kao kvadar. Ima odeljke ko klasa, samo se dodaje i za artefakte koji se raspoređuju po čvoru. Čvor je apstrakcija pojave čvora, pojava e prikazuje podvučenim imenom
-Čvorovi se mogu organizovati u pakete, mogu reagoati sa komponentama i artefaktima. Npr ima artefakt index.html i on se delojuje na serveru, piše se stereotip na vezi: <<deploy>>
-Čvor može da bude i fizički uređaj <<device>>, ili okruženje <<executionEvironment>>.
-Čvorovi se povezuju komunikacionim potanjama, izgledaju ko asocijacije. Putanje su obično bidirekcione, i mogu da sadrže stereotip koji je ime samog protokola koji se dešava na putanji

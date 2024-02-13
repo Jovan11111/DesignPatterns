@@ -1,6 +1,0 @@
-Dijagrami objekata prikazuju primerke klasa i njihov veze preko kojih objekti komuniciraju. Dijagram objekata je fizički, i predstavlja samo snimak sistma u jednom trenutku. Statički je jer prikazuje samo veze koje su aktivne u tom trenutku.
-Elementi dijagrama objekata su objekti i paketi, i veze.
-Dijagram objekata je koristan za prikaz složene strukture objekata i za prikaz ponašanja nekog pogleda kroz vreme, uz pomoć više dijagrama u različitim trenucima
-Dijagram objekata predstavja samo primer, a ne specifikaciju modela. Ima dokumentacionu sliku i pomaže u razumevanju modela
-Objekat je nešto u memoriji što ima stanje, ponšanje i identitet. Crta se isto ko klasa, al se ime razlikuje. Piše se imeobjekta:imeklase, npr. jovan:osoba. Može naziv da bude podvučen, može samo ime bez tipa, može i [] za zbirke. Aktivni objekti isto imaju dodatne dve linije kao aktivne klase
-Veze su putanje izmeću objekata, na dijagramima objekata se koriste primerci asocijacija. Na vezama mogu da se nađu svi ukrasi sem multiplikativnosti koja je uvek 1

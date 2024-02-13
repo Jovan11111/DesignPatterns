@@ -1,6 +1,6 @@
 #ifndef DESIGNPATTERNS_ABSTRACTCLASS_H
 #define DESIGNPATTERNS_ABSTRACTCLASS_H
-
+#include <iostream>
 
 class AbstractClass {
     void templateMethod(){
@@ -12,7 +12,7 @@ class AbstractClass {
     virtual void step1() = 0;
     virtual void step2() = 0;
     virtual void step3() = 0;
-    void hook() {cout << "Hook operation...";}
+    void hook() {std::cout << "Hook operation...";}
 };
 
 
