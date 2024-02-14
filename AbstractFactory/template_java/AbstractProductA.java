@@ -1,0 +1,3 @@
+interface AbstractProductA {
+    String usefulFunctionA();
+}
