@@ -1,3 +1,36 @@
+Title:
+Factory Method, Virtual Constructor Pattern
+
+Classification:
+Class Creation Pattern
+
+Purpose:
+The pattern allows a class to delegate the creation of objects to subclasses, it defines an interface for creation, but subclasses choose which objects to create.
+
+Applicability:
+When a class cannot anticipate the class of objects it must create.
+When a class wants its subclasses to determine the types of objects it will request to create.
+
+Participants:
+Product defines the interface of objects the FactoryMethod creates.
+ConcreteProduct implements the Product interface.
+Factory declares the FactoryMethod that returns a Product.
+ConcreteFactory redefines the FactoryMethod to return a ConcreteProduct object.
+
+Consequences:
+The pattern eliminates the need for client code to bind to a specific class, the client works through the product and that's it.
+The Factory method gives subclasses the ability to provide an extended version of an object.
+
+Related Patterns:
+Usually called from a Template Method.
+Abstract Factory is implemented using the Factory Method.
+
+
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Fabrički metod, Virtuelni konstruktor, Factory Method, Virtual Constructor
 

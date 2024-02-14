@@ -1,3 +1,44 @@
+Title:
+Proxy, Surrogate Pattern
+
+Classification:
+Object Structure Pattern
+
+Purpose:
+Provides a substitute for another object, controlling access to the original object, or delays the full cost of creating the original object until it is really needed.
+
+Applicability:
+When there is a need for a sophisticated reference to an object.
+
+Types of Proxies:
+Remote Proxy:
+- Provides a local representative for an object that is located in another address space, also known as an ambassador.
+Virtual Proxy:
+- Creates a relatively expensive object on demand.
+Protection Proxy:
+- Controls the right of access to the original object.
+
+Participants:
+Subject is a common interface for the RealSubject and its Proxy, this is done so that Proxy can be used as a RealSubject.
+Proxy holds a reference to the RealSubject, implements the subject interface, and controls access to the RealSubject in an already defined manner (which is different for other types of Proxies).
+RealSubject is the real subject represented by the proxy.
+
+Consequences:
+Introduces one level of indirection to the access object.
+Proxy implements copy-on-write (the delay in copying some part of memory after a fork until it officially changes).
+
+Related Patterns:
+A Proxy that implements copy-on-write can be used with the Prototype.
+
+Implementation:
+Used to create smart pointers, pointers which perform some actions such as counting references to an object, checking if it is locked, etc., before access.
+
+
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Zastupnik, Predstavnik, Zamena, Surogat, Surogate, Proxy
 

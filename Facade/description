@@ -1,3 +1,35 @@
+Title:
+Facade Pattern
+
+Classification:
+Object Structure Pattern
+
+Purpose:
+Provides a unified interface to a subsystem, i.e., defines a higher-level interface to make the subsystem easier to use.
+
+Applicability:
+When it is necessary to provide a simple interface to a complex system, so that the client does not have to know the system but only its interface.
+When there are numerous dependencies between the client and the subsystem classes, too complicated for the client.
+When there is a need to layer subsystems.
+
+Participants:
+The Facade knows which subsystem classes are responsible for what, it delegates client requests to the appropriate subsystem objects.
+Subsystem classes actually do something, they know nothing about the facade.
+
+Consequences:
+Reduces the number of objects that clients depend upon.
+Low coupling between subsystems and clients.
+The client can still use subsystem classes directly if they want.
+
+Related Patterns:
+Abstract Factory is a Facade for creating subsystem objects.
+Facade is implemented as a Singleton.
+
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Fasada, Facade
   

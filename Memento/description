@@ -1,3 +1,32 @@
+Title:
+Memento, Token Pattern
+
+Classification:
+Object Behavior Pattern
+
+Purpose:
+Captures and externally stores an object's internal state without violating its encapsulation.
+Allows the object to be restored to its saved state later.
+
+Applicability:
+When it is necessary to make a snapshot of an object's state so that the state can be restored later.
+A direct contract to obtain the state of the subject would expose its implementation details.
+
+Participants:
+The Memento stores the internal state of the Subject object, does not allow access to anyone except the Subject object and has a narrow interface to the Caretaker, and a wide one to the Subject.
+Subject creates a Memento object that contains a snapshot of its current state, it has the right to decide which part of the state to keep, and it uses the Memento to restore its state.
+Caretaker is responsible for the safe keeping of the Memento object, does not use Memento, and forwards it to the subject when restoration is needed.
+
+Related Patterns:
+In Iterator, Memento can be used to keep track of the current element.
+In Command, Memento can be used to store the state of undoable operations.
+
+
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Podsetnik, Uspoemna, Žeton, Token, Memento
 

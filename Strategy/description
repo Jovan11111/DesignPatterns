@@ -1,3 +1,41 @@
+Title:
+Strategy, Policy Pattern
+
+Classification:
+Object Behavior Pattern
+
+Purpose:
+Defines a family of algorithms, encapsulates each one, and makes them interchangeable at runtime.
+
+Applicability:
+When several related classes would differ only by some behavior.
+When different variants of an algorithm are required.
+When the algorithm uses data about which the context should not know anything.
+When a context class defines multiple behaviors that appear as branches of a conditional statement in various operations.
+
+Participants:
+Strategy declares a common contract for all supported algorithms.
+ConcreteStrategy implements a specific algorithm in accordance with the contract of the Strategy class.
+Context has a reference to an object of type Strategy, and is configured by the ConcreteStrategy object. It can provide a contract that allows the strategy object to access its data.
+
+Consequences:
+Implementation of a family of related algorithms as a hierarchy of classes.
+A flexible alternative to inheritance from the Context class.
+Strategies reduce the need for conditional statements.
+Dynamic selection of algorithm implementations.
+Downsides:
+Clients must be aware of the strategy with which they parameterize the context.
+The context sends unnecessary parameters for some concrete strategies.
+The number of objects in the application increases.
+
+Related Patterns:
+Strategy objects often represent Flyweight objects.
+
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Strategija, Politika, Strategy, Policy
   

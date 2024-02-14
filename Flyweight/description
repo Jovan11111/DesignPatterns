@@ -1,3 +1,40 @@
+Title:
+Flyweight Pattern
+
+Classification:
+Object Structure Pattern
+
+Purpose:
+Shares lightweight objects to avoid overproduction of objects. Lightweight objects are those that have no state, or whose external state does not depend on changes in context.
+
+Applicability:
+If the application uses a large number of objects of the same type.
+If part of the object's state can be transferred to an external state.
+When the external state is removed, the objects become shareable.
+The identity of the object is not important.
+
+Participants:
+Flyweight declares a contract through which flyweight receives an external state.
+ConcreteFlyweight implements the flyweight contract and adds attributes of internal state, objects must be shareable.
+UnsharedConcreteFlyweight: in the hierarchy, these objects are not shared, they are not leaves. They keep attributes of external state.
+FlyweightFactory creates flyweights and keeps them. The client requests a flyweight, and the factory retrieves an existing one or creates a new one.
+Client maintains references to assigned flyweights, keeps or calculates the external state of flyweight objects.
+
+Consequences:
+Saves space, reduces the number of objects, and changes the relationship between the internal and external state of an object.
+Disadvantage: The costs of finding and calculating the external state can be large, and this can't be known.
+
+Related Patterns:
+It combines with the composition pattern in that unshared flyweights are composites, and concrete ones are leaves.
+States and Strategies can be flyweights.
+Shared flyweights can be variations of Singleton with a limited number of objects.
+
+
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Muva, Flyweight
 

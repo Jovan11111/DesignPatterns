@@ -1,3 +1,40 @@
+Title:
+Template Method Pattern
+
+Classification:
+Class Behavior Pattern
+
+Purpose:
+Defines the skeleton of an algorithm and delegates some steps to subclasses.
+Allows subclasses to redefine steps of the algorithm without changing its structure.
+
+Motivation:
+The template method defines an algorithm composed of abstract operations, and subclasses define these operations, thus providing specific behavior.
+
+Applicability:
+To implement invariant parts of an algorithm once, and leave parts that change to subclasses.
+To avoid code duplication in order to display the common behavior of subclasses.
+
+Participants:
+The AbstractClass implements the template of the algorithm and declares abstract primitive operations for the steps of the algorithm.
+The ConcreteClass implements primitive operations that perform parts of the algorithm in a specific way.
+
+Consequences:
+A fundamental technique for code reuse.
+The parent class calls children's operations.
+
+Related Patterns:
+Factory method is often called from the Template Method.
+The Template method only changes the steps of the algorithm, while Strategy changes the entire algorithm with something else.
+
+Additional:
+Some primitive operations can be implemented in the abstract class, they are called hook operations.
+
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Šablonski metod, Template method
 

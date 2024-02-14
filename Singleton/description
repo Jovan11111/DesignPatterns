@@ -1,3 +1,36 @@
+Title:
+Singleton Pattern
+
+Classification:
+Object Creation Pattern
+
+Purpose:
+Ensures that a class has only one instance and provides a global point of access to it.
+
+Motivation:
+For some classes it is necessary to ensure that they have only one instance, the solution is for the class itself to be responsible for the uniqueness of its object.
+
+Applicability:
+When there should be only one instance of a class, which can be extended.
+When it is necessary for that instance to be accessible.
+
+Participants:
+Singleton defines the instance() operation as a static method, this method is responsible for creating one object. The constructor of this class is protected or private.
+
+Consequences:
+Controlled access to the single instance.
+Namespace relieved.
+Permitted refinement of operations.
+Possible controlled increase in the number of instances.
+
+Related Patterns:
+Abstract Factory, Builder, Facade use Singleton.
+
+
+
+
+SERBIAN TRANSLATION
+
 Ime:
 Unikat, Singleton
 
