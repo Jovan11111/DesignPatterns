@@ -1,0 +1,3 @@
+interface Implementor {
+    void operationImpl();
+}

@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        system.out.println("");
+        Subject proxy = new Proxy();
+        proxy.request();
     }
 }

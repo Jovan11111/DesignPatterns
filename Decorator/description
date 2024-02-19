@@ -16,7 +16,7 @@ Participants:
 Component defines the interface for objects that can have responsibilities added dynamically.
 ConcreteComponent defines an object to which responsibilities can be added.
 Decorator maintains a reference to a Component object and inherits its interface.
-ConcreteDecorator adds responsibilities to a Component object.
+ConcreteDecoratorA adds responsibilities to a Component object.
 
 Consequences:
 Greater flexibility than static inheritance, avoiding class explosion, avoiding heavily parameterized classes.
