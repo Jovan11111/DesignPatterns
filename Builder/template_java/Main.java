@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        system.out.println("");
+        Builder builder = new ConcreteBuilder();
+        Director director = new Director(builder);
+
+        director.construct();
+        Product product = builder.getProduct();
+        product.showProduct();
     }
 }
