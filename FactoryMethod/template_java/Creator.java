@@ -1,3 +1,4 @@
+// Abstract class that has a createProduct method that delegates product creation to Concrete Creators
 abstract class Creator {
     public abstract Product createProduct();
 

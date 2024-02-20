@@ -8,6 +8,4 @@ abstract class Abstraction {
     public void operation() {
         implementor.operationImpl();
     }
-
-    // Note: No need for explicit destructor in Java
 }

@@ -6,12 +6,11 @@ public class Main {
         Abstraction abstractionA = new RefinedAbstraction(implementorA);
         Abstraction abstractionB = new RefinedAbstraction(implementorB);
 
-        abstractionA.operation(); // Output: Concrete Implementor A operation
-        abstractionB.operation(); // Output: Concrete Implementor B operation
+        abstractionA.operation();
+        abstractionB.operation();
 
-        // Using extended operation
         RefinedAbstraction refinedAbstraction = new RefinedAbstraction(implementorA);
-        refinedAbstraction.operation(); // Output: Concrete Implementor A operation
-        refinedAbstraction.extendedOperation(); // Output: Extended operation
+        refinedAbstraction.operation();
+        refinedAbstraction.extendedOperation();
     }
 }

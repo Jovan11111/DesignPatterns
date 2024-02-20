@@ -1,7 +1,3 @@
-//
-// Created by jokic on 1/10/2024.
-//
-
 #ifndef DESIGNPATTERNS_COUNTER_H
 #define DESIGNPATTERNS_COUNTER_H
 

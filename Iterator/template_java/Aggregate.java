@@ -1,0 +1,3 @@
+interface Aggregate {
+    Iterator createIterator();
+}

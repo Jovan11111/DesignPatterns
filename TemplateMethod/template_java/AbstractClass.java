@@ -7,12 +7,12 @@ abstract class AbstractClass {
         step3();
     }
 
-    // Abstract methods to be implemented by subclasses
+    // Abstract methods that concrete classes are going to implement
     abstract void step1();
     abstract void step2();
     abstract void step3();
 
-    // Hook method (optional)
+    // Hook method that doesn't need to be overridden
     void hook() {
         System.out.println("Hook operation...");
     }

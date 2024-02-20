@@ -11,6 +11,6 @@ public class Main {
         invoker.addCommand(command2);
         invoker.addCommand(command3);
 
-        invoker.executeCommands(); // Output: Receiver: executing action (executes all added commands)
+        invoker.executeCommands();
     }
 }

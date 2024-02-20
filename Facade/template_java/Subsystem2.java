@@ -1,3 +1,4 @@
+// Definition of the Subsystem class that has some operations
 class Subsystem2 {
     public void operation1() {
         System.out.println("Subsystem2: Operation 1");

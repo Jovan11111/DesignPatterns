@@ -12,7 +12,14 @@ public class Main {
         composite2.add(leaf3);
 
         composite.add(composite2);
-
+        // Representation of the tree:
+        /*
+        *        c
+        *     /  |  \
+        *    c2 l1  l2
+        *    |
+        *    l3
+        * */
         composite.operation();
     }
 }

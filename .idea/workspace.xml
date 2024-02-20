@@ -9,16 +9,30 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0bff33d-3ef0-4ea2-aa2c-5a2aaa14db0b" name="Changes" comment="Added java templates">
-      <change afterPath="$PROJECT_DIR$/ChainOfResponsability/template_cpp/ConcreteHandlerA.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChainOfResponsability/template_cpp/ConcreteHandlerB.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChainOfResponsability/template_cpp/Handler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterator/template_cpp/Agregate.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterator/template_cpp/ConcreteAgregate.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterator/template_cpp/ConcreteAgregate.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterator/template_cpp/ConcreteIterator.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterator/template_cpp/Iterator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+    <list default="true" id="f0bff33d-3ef0-4ea2-aa2c-5a2aaa14db0b" name="Changes" comment="Added cpp templates">
+      <change afterPath="$PROJECT_DIR$/ChainOfResponsability/template_java/ConcreteHandlerA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChainOfResponsability/template_java/ConcreteHandlerB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChainOfResponsability/template_java/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Iterator/template_java/Aggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Iterator/template_java/ConcreteAggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Iterator/template_java/ConcreteIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Iterator/template_java/Iterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_java/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_java/AbstractFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_java/AbstractProductA.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_java/AbstractProductA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_java/AbstractProductB.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_java/AbstractProductB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteFactory1.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteFactory1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteFactory2.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteFactory2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteProductA1.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteProductA1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteProductA2.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteProductA2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteProductB1.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteProductB1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteProductB2.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_java/ConcreteProductB2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adapter/template_java/Adaptee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Adapter/template_java/Adaptee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adapter/template_java/Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Adapter/template_java/Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adapter/template_java/Target.java" beforeDir="false" afterPath="$PROJECT_DIR$/Adapter/template_java/Target.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChainOfResponsability/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChainOfResponsability/template_java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterator/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/template_java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +64,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2cbGPxjJNoXrLjRuG9uIlMcNn43" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -58,14 +76,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="cf.first.check.clang-format" value="false" />
-    <property name="cidr.known.project.marker" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +99,8 @@
       <updated>1708372846278</updated>
       <workItem from="1708372847357" duration="2419000" />
       <workItem from="1708455731026" duration="1609000" />
-      <workItem from="1708457371574" duration="1109000" />
+      <workItem from="1708457371574" duration="1532000" />
+      <workItem from="1708458934648" duration="1114000" />
     </task>
     <task id="LOCAL-00001" summary="Added java templates">
       <option name="closed" value="true" />
@@ -94,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708457317156</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added cpp templates">
+      <created>1708458535878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708458535878</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +144,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added java templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added java templates" />
+    <MESSAGE value="Added cpp templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added cpp templates" />
   </component>
 </project>

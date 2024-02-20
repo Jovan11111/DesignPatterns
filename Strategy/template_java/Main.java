@@ -4,9 +4,9 @@ public class Main {
         Strategy strategy2 = new ConcreteStrategy2();
 
         Context context = new Context(strategy1);
-        context.executeStrategy(); // Output: Executing strategy 1
+        context.executeStrategy();
 
         context.setStrategy(strategy2);
-        context.executeStrategy(); // Output: Executing strategy 2
+        context.executeStrategy();
     }
 }

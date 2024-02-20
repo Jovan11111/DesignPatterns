@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// Definition of the class that represents a node in the tree
+// Has a list of instances of Components
+// For its operation, it iterates through the list, and calls its children's operation
 class Composite implements Component {
     private List<Component> children = new ArrayList<>();
 

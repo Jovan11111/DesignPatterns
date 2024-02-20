@@ -1,3 +1,4 @@
+// Definition of the class that adapts Adaptee to Target
 class Adapter implements Target {
     private Adaptee adaptee;
 

@@ -8,7 +8,7 @@ public class Main {
         Prototype clonedB = prototypeB.clone();
 
         // Printing cloned prototypes
-        clonedA.print(); // Output: ConcretePrototypeA with data: Prototype A
-        clonedB.print(); // Output: ConcretePrototypeB with number: 42
+        clonedA.print(); // Output is a string
+        clonedB.print(); // Output is a number
     }
 }

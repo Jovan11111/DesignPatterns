@@ -1,3 +1,4 @@
+// Definition of the class represents an interface through which the Client communicates with Subsystem classes in some way
 class Facade {
     private Subsystem1 subsystem1;
     private Subsystem2 subsystem2;

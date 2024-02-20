@@ -1,3 +1,4 @@
+// Concrete decorator that adds a concrete behavior B
 class ConcreteDecoratorB extends Decorator {
     public ConcreteDecoratorB(Component c) {
         super(c);
