@@ -3,4 +3,4 @@ project(DesignPatterns)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DesignPatterns main.cpp Singleton TemplateMethod Prototype Strategy State Proxy Observer Memento Mediator Iterator Flyweight FactoryMethod Facade Decorator Composite Command ChainOfResponsability Builder Bridge Adapter AbstractFactory)
+add_executable(DesignPatterns main.cpp ChainOfResponsability Iterator Singleton TemplateMethod Prototype Strategy State Proxy Observer Memento Mediator Iterator Flyweight FactoryMethod Facade Decorator Composite Command ChainOfResponsability Builder Bridge Adapter AbstractFactory)
