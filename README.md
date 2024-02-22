@@ -5,7 +5,7 @@ Each design pattern is placed in its own directory (DIR), in which you will find
 
 - template_cpp: A simple implementation of the design pattern in c++.
 - template_java: A simple implementation of the design pattern in java.
-- Practical Examples: Examples to showcase how the design pattern can be applied in various contexts.
+- Practical Examples: Examples to showcase how the design pattern can be applied in various contexts. <-- soon, not yet :) -->
 - Description: A detailed explanation of the design pattern, including its intent, applicability, and structure.
 - UML Diagram: A visual representation of the design pattern to aid in understanding its structure and the relationships between its components.
 
