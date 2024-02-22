@@ -3,6 +3,7 @@
 
 #include "State.hpp"
 
+// Definition of the concrete state that has a simple handle method
 class ConcreteState1 : public State {
 public:
     void handle(Context& context) override;

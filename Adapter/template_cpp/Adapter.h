@@ -4,6 +4,7 @@
 #include "Target.h"
 #include "Adaptee.h"
 
+// Definition of the class that adapts Adaptee to Target
 class Adapter : public Target {
 private:
     Adaptee* adaptee_;

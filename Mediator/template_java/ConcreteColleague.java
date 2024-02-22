@@ -1,3 +1,4 @@
+// Definition of the concrete colleague that can send and receive messages
 class ConcreteColleague implements Colleague {
     private Mediator mediator;
 

@@ -3,6 +3,7 @@
 
 #include "Agregate.h"
 
+// Common interface for all iterators
 class Iterator {
 protected:
     const Aggregate* aggregate;

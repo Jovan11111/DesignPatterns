@@ -2,6 +2,7 @@
 #define DESIGNPATTERNS_ABSTRACTCLASS_H
 #include <iostream>
 
+// Definiton of the abstract class that has a template method, steps that need to be implemented and a hook method
 class AbstractClass {
     void templateMethod(){
         step1();

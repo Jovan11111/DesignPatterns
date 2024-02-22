@@ -3,6 +3,7 @@
 
 #include "Mediator.h"
 
+// Definition of the concrete mediator that has a list of collegues its responsible for and can send messages
 class ConcreteMediator : public Mediator {
 private:
     std::vector<Colleague*> colleagues;

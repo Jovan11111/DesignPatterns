@@ -6,6 +6,7 @@
 #include "vector"
 #include "Colleague.h"
 
+// Common interface for all mediators, they send messages
 class Mediator {
 public:
     virtual void sendMessage(Colleague* sender, const std::string& message) = 0;

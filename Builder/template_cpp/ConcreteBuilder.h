@@ -3,6 +3,7 @@
 
 #include "Builder.h"
 
+// Defintion of the ConcreteBuilder that creates the part of the product step by step, and has a getProduct operation
 class ConcreteBuilder : public Builder {
 private:
     Product* product;

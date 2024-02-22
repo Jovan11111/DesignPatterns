@@ -1,5 +1,5 @@
+// Definiton of the abstract class that has a template method, steps that need to be implemented and a hook method
 abstract class AbstractClass {
-    // Template method
     void templateMethod() {
         step1();
         step2();
@@ -7,12 +7,10 @@ abstract class AbstractClass {
         step3();
     }
 
-    // Abstract methods that concrete classes are going to implement
     abstract void step1();
     abstract void step2();
     abstract void step3();
 
-    // Hook method that doesn't need to be overridden
     void hook() {
         System.out.println("Hook operation...");
     }

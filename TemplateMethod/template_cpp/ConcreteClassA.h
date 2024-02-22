@@ -5,6 +5,7 @@
 #include <iostream>
 #include "AbstractClass.h"
 
+// Definition of the simple concrete class to showcase the pattern
 class ConcreteClassA : public AbstractClass{
     void step1() override {
         std::cout << "ConcreteClassA - Step 1" << std::endl;

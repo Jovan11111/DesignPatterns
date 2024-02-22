@@ -3,6 +3,7 @@
 
 #include "iostream"
 
+// Declaration of the interface that will be implemented by both Composite and Leaf
 class Component {
 public:
     virtual ~Component() = default;

@@ -3,6 +3,7 @@
 
 #include "Colleague.h"
 
+// Definition of the concrete colleague that can send and receive messages
 class ConcreteColleague : public Colleague {
 public:
     explicit ConcreteColleague(Mediator* mediator) : Colleague(mediator) {}

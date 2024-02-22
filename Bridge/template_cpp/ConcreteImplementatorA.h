@@ -3,6 +3,7 @@
 
 #include "Implementator.h"
 
+// Definition of the concrete implementation of the abstraction
 class ConcreteImplementorA : public Implementor {
 public:
     void operationImpl() override {

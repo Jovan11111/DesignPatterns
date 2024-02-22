@@ -3,6 +3,7 @@
 
 #include "Memento.h"
 
+// Definition of the originator. Its state needs to be remembered
 class Originator {
 private:
     std::string state_;

@@ -4,6 +4,7 @@
 #include "string"
 #include "iostream"
 
+// Definition of the simple product class to showcase the pattern
 class Product {
 private:
     std::string part1;

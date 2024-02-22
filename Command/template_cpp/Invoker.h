@@ -5,6 +5,7 @@
 #include "memory"
 #include "vector"
 
+// Definition of the class that asks for commands to be executed. It has an array of them
 class Invoker {
 private:
     std::vector<std::unique_ptr<Command>> commands;

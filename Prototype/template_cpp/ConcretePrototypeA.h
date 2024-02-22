@@ -6,6 +6,7 @@
 #include <utility>
 #include "Prototype.h"
 
+// Definition of the concrete prototype that has a string argument and a copy constructor
 class ConcretePrototypeA : public Prototype {
 private:
     std::string data;

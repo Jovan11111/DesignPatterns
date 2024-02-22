@@ -2,7 +2,7 @@
 #define DESIGNPATTERNS_STRATEGY_CONTEXT_HPP
 
 #include "Strategy.hpp"
-
+// Context class that has a reference to a strategy and passes down a request for an oepration to it
 class Context {
 private:
     Strategy *strategy_;

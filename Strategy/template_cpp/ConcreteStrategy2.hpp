@@ -3,11 +3,11 @@
 
 #include "Strategy.hpp"
 
+// Definition of a simple concrete strategy to showcase the pattern
 class ConcreteStrategy2 : public Strategy {
 public:
     void execute() const override {
         std::cout << "Executing strategy 2" << std::endl;
-        // Add specific implementation for strategy 2 here
     }
 };
 

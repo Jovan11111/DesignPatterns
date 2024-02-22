@@ -3,6 +3,7 @@
 
 #include "AbstractProductA.h"
 
+// Definition of the second variation of the A product
 class ConcreteProductA2 : public AbstractProductA {
 public:
     std::string UsefulFunctionA() const override {

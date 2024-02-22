@@ -3,6 +3,7 @@
 
 #include "Decorator.h"
 
+// Concrete decorator that adds a concrete behavior A
 class ConcreteDecoratorA : public Decorator {
 public:
     explicit ConcreteDecoratorA(std::unique_ptr<Component> c) : Decorator(std::move(c)) {}

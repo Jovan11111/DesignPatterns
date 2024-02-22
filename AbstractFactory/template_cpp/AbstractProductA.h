@@ -3,6 +3,7 @@
 
 #include "iostream"
 
+// Declaration of the Interface that all products of type A will implement
 class AbstractProductA {
 public:
     virtual ~AbstractProductA() = default;

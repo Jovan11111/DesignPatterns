@@ -3,6 +3,7 @@
 
 #include "Product.h"
 
+// Simple definition of the Concrete Product class
 class ConcreteProduct1 : public Product {
 public:
     std::string getName() const override {

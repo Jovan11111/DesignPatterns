@@ -1,3 +1,4 @@
+// Definition of the Memento that remembers the originator state
 public class Memento {
     private String state;
 

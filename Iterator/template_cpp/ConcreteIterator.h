@@ -3,9 +3,10 @@
 
 #include "Iterator.h"
 
+// Definition of the concrete iterator that iterates through concrete aggregate
 class ConcreteIterator : public Iterator {
 public:
-    ConcreteIterator(const Aggregate* agg) : Iterator(agg) {}
+    ConcreteIterator(Aggregate* agg) : Iterator(agg) {}
 
     void first() override {
         currentIndex = 0;

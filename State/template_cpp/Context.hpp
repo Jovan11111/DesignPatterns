@@ -3,6 +3,7 @@
 
 #include "State.hpp"
 
+// Context class that has a concrete state and its operation depends on that state
 class Context {
 private:
     State* state_;

@@ -1,3 +1,4 @@
+// Definition of the concrete iterator that iterates through concrete aggregate
 class ConcreteIterator implements Iterator {
     private final ConcreteAggregate aggregate;
     private int currentIndex;

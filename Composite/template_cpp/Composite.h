@@ -5,6 +5,9 @@
 #include <vector>
 #include <algorithm>
 
+// Definition of the class that represents a node in the tree
+// Has a list of instances of Components
+// For its operation, it iterates through the list, and calls its children's operations
 class Composite : public Component {
 private:
     std::vector<Component*> children_;

@@ -3,6 +3,7 @@
 
 #include "Component.h"
 
+// Actual component on which decorations will be added
 class ConcreteComponent : public Component {
 public:
     void operation() const override {

@@ -4,6 +4,7 @@
 #include "AbstractProductA.h"
 #include "AbstractProductB.h"
 
+// Declaration of the AbstractFactory interface that can create products A and B
 class AbstractFactory {
 public:
     virtual AbstractProductA* CreateProductA() const = 0;

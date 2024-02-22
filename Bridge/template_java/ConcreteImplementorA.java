@@ -1,3 +1,4 @@
+// Definition of the concrete implementation of the abstraction
 class ConcreteImplementorA implements Implementor {
     @Override
     public void operationImpl() {

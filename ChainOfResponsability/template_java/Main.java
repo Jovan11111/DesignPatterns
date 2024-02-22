@@ -8,8 +8,8 @@ public class Main {
         handlerA.setNextHandler(handlerB);
 
         // Process requests
-        handlerA.handleRequest("A");
-        handlerA.handleRequest("B");
-        handlerA.handleRequest("C");
+        handlerA.handleRequest("A"); // Handled by A
+        handlerA.handleRequest("B"); // Handled by B
+        handlerA.handleRequest("C"); // Will not be handled
     }
 }

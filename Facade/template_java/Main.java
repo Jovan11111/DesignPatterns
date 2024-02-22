@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        // Create the Facade
         Facade facade = new Facade();
 
         // Using a facade interface to call operations that are being processed by subsystem classes

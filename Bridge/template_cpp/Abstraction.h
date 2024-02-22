@@ -3,6 +3,7 @@
 
 #include "Implementator.h"
 
+// Definition of the abstract class that has a reference to some implementation, and calls its operations
 class Abstraction {
 protected:
     Implementor* implementor;

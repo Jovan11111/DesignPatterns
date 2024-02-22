@@ -1,3 +1,4 @@
+// Defintion of the ConcreteBuilder that creates the part of the product step by step, and has a getProduct operation
 class ConcreteBuilder implements Builder {
     private Product product;
 

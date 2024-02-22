@@ -1,3 +1,4 @@
+// Definition of the concrete handler that handles all A requests, but passes down a request if its not A
 class ConcreteHandlerB implements Handler {
     private Handler nextHandler;
 

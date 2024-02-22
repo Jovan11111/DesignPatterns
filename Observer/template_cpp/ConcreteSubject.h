@@ -5,6 +5,8 @@
 #include "vector"
 #include "algorithm"
 
+// Definition of the concrete subject that has a list of attached observers, and can add them and remove them.
+// It can set data, and then notify all subscribed observers
 class ConcreteSubject : public Subject {
 private:
     std::vector<Observer*> observers;

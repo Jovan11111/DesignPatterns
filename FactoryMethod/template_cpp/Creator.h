@@ -3,6 +3,7 @@
 
 #include "Product.h"
 
+// Abstract class that has a createProduct method that delegates product creation to Concrete Creators
 class Creator {
 public:
     virtual ~Creator() = default;

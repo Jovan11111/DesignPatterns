@@ -3,6 +3,7 @@
 
 #include "iostream"
 
+// Definition of the class that needs to be adapted
 class Adaptee {
 public:
     void specificRequest() const {

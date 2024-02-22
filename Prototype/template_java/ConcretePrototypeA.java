@@ -1,3 +1,4 @@
+// Definition of the concrete prototype that has a string argument and a copy constructor
 class ConcretePrototypeA implements Prototype {
     private String data;
 

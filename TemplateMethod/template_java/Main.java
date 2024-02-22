@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        // Create the classes
         AbstractClass abstractClassA = new ConcreteClassA();
         AbstractClass abstractClassB = new ConcreteClassB();
 

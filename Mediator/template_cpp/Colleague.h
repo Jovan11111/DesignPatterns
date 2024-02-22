@@ -3,6 +3,7 @@
 
 #include "Mediator.h"
 
+// A common interface for collegues that can send and receive messages
 class Colleague {
 protected:
     Mediator* mediator;

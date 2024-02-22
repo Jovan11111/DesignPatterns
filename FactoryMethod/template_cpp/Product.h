@@ -4,6 +4,7 @@
 #include "string"
 #include "iostream"
 
+// Declaration of the common interface for all products being made
 class Product {
 public:
     virtual ~Product() = default;

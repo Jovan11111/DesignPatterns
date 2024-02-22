@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Prototype.h"
 
+// Definition of the concrete prototype that has a number argument and a copy constructor
 class ConcretePrototypeB : public Prototype{
 private:
     int number;

@@ -1,3 +1,4 @@
+// Definition of the concrete abstraction that need implementation
 class RefinedAbstraction extends Abstraction {
     public RefinedAbstraction(Implementor imp) {
         super(imp);

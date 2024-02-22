@@ -1,3 +1,4 @@
+// Definition of the originator. Its state needs to be remembered
 public class Originator {
     private String state;
 

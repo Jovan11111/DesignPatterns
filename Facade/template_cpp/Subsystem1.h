@@ -3,6 +3,7 @@
 
 #include "iostream"
 
+// Definition of the Subsystem1 class that has some operations
 class Subsystem1 {
 public:
     void operation1() const {

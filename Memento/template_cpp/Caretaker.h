@@ -3,6 +3,7 @@
 
 #include "Memento.h"
 
+// Definition of the class that is used for holding and storing a memento
 class Caretaker {
 private:
     Memento* memento_;

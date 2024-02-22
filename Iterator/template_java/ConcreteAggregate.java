@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// Definition of the concrete aggregate that has a list of integers and can add elements to itself
 class ConcreteAggregate implements Aggregate {
     private List<Integer> elements = new ArrayList<>();
 

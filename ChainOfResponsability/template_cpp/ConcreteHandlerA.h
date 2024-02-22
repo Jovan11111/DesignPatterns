@@ -3,6 +3,7 @@
 
 #include "Handler.h"
 
+// Definition of the concrete handler that handles all A requests, but passes down a request if its not A
 class ConcreteHandlerA : public Handler {
 public:
     void handleRequest(const std::string& request) override {

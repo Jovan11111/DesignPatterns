@@ -1,3 +1,4 @@
+// Context class that has a reference to a strategy and passes down a request for an oepration to it
 class Context {
     private Strategy strategy;
 

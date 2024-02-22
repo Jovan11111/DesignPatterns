@@ -5,6 +5,7 @@
 
 class Context;
 
+// A common interface for all states that need to be accessed by context
 class State {
 public:
     virtual ~State() = default;

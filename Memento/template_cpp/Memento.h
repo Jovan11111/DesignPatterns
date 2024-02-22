@@ -5,6 +5,7 @@
 
 #include "iostream"
 
+// Definition of the Memento that remembers the originator state
 class Memento {
 private:
     std::string state_;

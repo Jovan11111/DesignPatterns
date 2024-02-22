@@ -3,6 +3,7 @@
 
 #include "Component.h"
 
+// Definition of the class that represents a leaf in the tree, its operation actually does something
 class Leaf : public Component {
 public:
     void operation() const override {

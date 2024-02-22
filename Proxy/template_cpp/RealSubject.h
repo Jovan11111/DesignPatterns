@@ -3,6 +3,7 @@
 
 #include "Subject.h"
 
+// A real subject that needs to have its operation done later
 class RealSubject : public Subject {
 public:
     void request() const override {

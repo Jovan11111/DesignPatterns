@@ -3,6 +3,7 @@
 
 #include "Builder.h"
 
+// Definition of the Director that has a reference to a builder, and requests constructing a product
 class Director {
 private:
     Builder* builder;

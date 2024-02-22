@@ -3,6 +3,7 @@
 
 #include "Abstraction.h"
 
+// Definition of the concrete abstraction that need implementation
 class RefinedAbstraction : public Abstraction {
 public:
     explicit RefinedAbstraction(Implementor* imp) : Abstraction(imp) {}

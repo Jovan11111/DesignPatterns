@@ -3,6 +3,7 @@
 
 #include "Strategy.hpp"
 
+// Definition of a simple concrete strategy to showcase the pattern
 class ConcreteStrategy1 : public Strategy {
 public:
     void execute() const override {

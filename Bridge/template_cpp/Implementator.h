@@ -3,6 +3,7 @@
 
 #include "iostream"
 
+// An interface that is implemented by implementations through which they communicate with the abstraction
 class Implementor {
 public:
     virtual void operationImpl() = 0;

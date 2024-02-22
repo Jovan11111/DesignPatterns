@@ -1,3 +1,4 @@
+// Definition of the simple concrete class to showcase the pattern
 class ConcreteClassB extends AbstractClass {
     @Override
     void step1() {

@@ -3,6 +3,7 @@
 
 #include "Product.h"
 
+// An interface for concrete builders to communicate with the Director
 class Builder {
 public:
     virtual void buildPart1() = 0;

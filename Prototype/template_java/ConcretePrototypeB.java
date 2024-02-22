@@ -1,3 +1,4 @@
+// Definition of the concrete prototype that has a number argument and a copy constructor
 class ConcretePrototypeB implements Prototype {
     private int number;
 

@@ -1,3 +1,4 @@
+// Definition of the simple product class to showcase the pattern
 class Product {
     private String part1;
     private String part2;

@@ -4,6 +4,7 @@
 #include "iostream"
 #include "memory"
 
+// Declaration of the common interface between the actual component and its decorators
 class Component {
 public:
     virtual void operation() const = 0;

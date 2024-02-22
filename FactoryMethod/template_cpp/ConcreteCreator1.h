@@ -4,6 +4,7 @@
 #include "Creator.h"
 #include "ConcreteProduct1.h"
 
+// Definition of the class that creates Concrete Product 1
 class ConcreteCreator1 : public Creator {
 public:
     Product* createProduct() const override {

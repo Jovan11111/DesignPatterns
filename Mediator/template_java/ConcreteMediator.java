@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// Definition of the concrete mediator that has a list of collegues its responsible for and can send messages
 class ConcreteMediator implements Mediator {
     private List<Colleague> colleagues = new ArrayList<>();
 
