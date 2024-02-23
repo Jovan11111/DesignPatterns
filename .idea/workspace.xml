@@ -9,107 +9,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0bff33d-3ef0-4ea2-aa2c-5a2aaa14db0b" name="Changes" comment="Added java templates and comments">
+    <list default="true" id="f0bff33d-3ef0-4ea2-aa2c-5a2aaa14db0b" name="Changes" comment="Added comments to all files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_cpp/AbstractFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_cpp/AbstractFactory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_cpp/AbstractProductA.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_cpp/AbstractProductA.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_cpp/AbstractProductB.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_cpp/AbstractProductB.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteFactory1.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteFactory1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteFactory2.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteFactory2.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteProductA1.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteProductA1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteProductA2.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteProductA2.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteProductB1.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteProductB1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteProductB2.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/template_cpp/ConcreteProductB2.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adapter/template_cpp/Adaptee.h" beforeDir="false" afterPath="$PROJECT_DIR$/Adapter/template_cpp/Adaptee.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adapter/template_cpp/Adapter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Adapter/template_cpp/Adapter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adapter/template_cpp/Target.h" beforeDir="false" afterPath="$PROJECT_DIR$/Adapter/template_cpp/Target.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_cpp/Abstraction.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_cpp/Abstraction.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_cpp/ConcreteImplementatorA.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_cpp/ConcreteImplementatorA.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_cpp/ConcreteImplementatorB.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_cpp/ConcreteImplementatorB.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_cpp/Implementator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_cpp/Implementator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_cpp/RefinedAbstraction.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_cpp/RefinedAbstraction.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_java/Abstraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_java/Abstraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_java/ConcreteImplementorA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_java/ConcreteImplementorA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_java/ConcreteImplementorB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_java/ConcreteImplementorB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_java/Implementor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_java/Implementor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/template_java/RefinedAbstraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/template_java/RefinedAbstraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Builder/template_cpp/Builder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/template_cpp/Builder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Builder/template_cpp/ConcreteBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/template_cpp/ConcreteBuilder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Builder/template_cpp/Director.h" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/template_cpp/Director.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Builder/template_cpp/Product.h" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/template_cpp/Product.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Builder/template_java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/template_java/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Builder/template_java/ConcreteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/template_java/ConcreteBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Builder/template_java/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/template_java/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Builder/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/template_java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Builder/template_java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/template_java/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChainOfResponsability/template_cpp/ConcreteHandlerA.h" beforeDir="false" afterPath="$PROJECT_DIR$/ChainOfResponsability/template_cpp/ConcreteHandlerA.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChainOfResponsability/template_cpp/ConcreteHandlerB.h" beforeDir="false" afterPath="$PROJECT_DIR$/ChainOfResponsability/template_cpp/ConcreteHandlerB.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChainOfResponsability/template_cpp/Handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/ChainOfResponsability/template_cpp/Handler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChainOfResponsability/template_java/ConcreteHandlerA.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChainOfResponsability/template_java/ConcreteHandlerA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChainOfResponsability/template_java/ConcreteHandlerB.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChainOfResponsability/template_java/ConcreteHandlerB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChainOfResponsability/template_java/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChainOfResponsability/template_java/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChainOfResponsability/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChainOfResponsability/template_java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/template_cpp/Command.h" beforeDir="false" afterPath="$PROJECT_DIR$/Command/template_cpp/Command.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/template_cpp/ConcreteCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Command/template_cpp/ConcreteCommand.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/template_cpp/Invoker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Command/template_cpp/Invoker.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/template_cpp/Invoker.h" beforeDir="false" afterPath="$PROJECT_DIR$/Command/template_cpp/Invoker.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/template_cpp/Reciever.h" beforeDir="false" afterPath="$PROJECT_DIR$/Command/template_cpp/Reciever.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/template_java/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/Command/template_java/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/template_java/ConcreteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Command/template_java/ConcreteCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/template_java/Invoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Command/template_java/Invoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Command/template_java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/template_java/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Command/template_java/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composite/template_cpp/Component.h" beforeDir="false" afterPath="$PROJECT_DIR$/Composite/template_cpp/Component.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composite/template_cpp/Composite.h" beforeDir="false" afterPath="$PROJECT_DIR$/Composite/template_cpp/Composite.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composite/template_cpp/Leaf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Composite/template_cpp/Leaf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composite/template_java/Composite.java" beforeDir="false" afterPath="$PROJECT_DIR$/Composite/template_java/Composite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composite/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Composite/template_java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator/template_cpp/Component.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator/template_cpp/Component.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator/template_cpp/ConcreteComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator/template_cpp/ConcreteComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator/template_cpp/ConcreteDecoratorA.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator/template_cpp/ConcreteDecoratorA.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator/template_cpp/ConcreteDecoratorB.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator/template_cpp/ConcreteDecoratorB.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator/template_cpp/Decorator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator/template_cpp/Decorator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator/template_java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade/template_cpp/Facade.h" beforeDir="false" afterPath="$PROJECT_DIR$/Facade/template_cpp/Facade.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade/template_cpp/Subsystem1.h" beforeDir="false" afterPath="$PROJECT_DIR$/Facade/template_cpp/Subsystem1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade/template_cpp/Subsystem2.h" beforeDir="false" afterPath="$PROJECT_DIR$/Facade/template_cpp/Subsystem2.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Facade/template_java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryMethod/template_cpp/ConcreteCreator1.h" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryMethod/template_cpp/ConcreteCreator1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryMethod/template_cpp/ConcreteCreator2.h" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryMethod/template_cpp/ConcreteCreator2.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryMethod/template_cpp/ConcreteProduct1.h" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryMethod/template_cpp/ConcreteProduct1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryMethod/template_cpp/ConcreteProduct2.h" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryMethod/template_cpp/ConcreteProduct2.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryMethod/template_cpp/Creator.h" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryMethod/template_cpp/Creator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryMethod/template_cpp/Product.h" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryMethod/template_cpp/Product.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryMethod/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryMethod/template_java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterator/template_cpp/Agregate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/template_cpp/Agregate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterator/template_cpp/ConcreteAgregate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/template_cpp/ConcreteAgregate.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterator/template_cpp/ConcreteAgregate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/template_cpp/ConcreteAgregate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterator/template_cpp/ConcreteIterator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/template_cpp/ConcreteIterator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterator/template_cpp/Iterator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/template_cpp/Iterator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterator/template_java/Aggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/template_java/Aggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterator/template_java/ConcreteAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/template_java/ConcreteAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterator/template_java/ConcreteIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/template_java/ConcreteIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterator/template_java/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/template_java/Iterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator/template_cpp/Colleague.h" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/template_cpp/Colleague.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator/template_cpp/ConcreteColleague.h" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/template_cpp/ConcreteColleague.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator/template_cpp/ConcreteMediator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/template_cpp/ConcreteMediator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator/template_cpp/ConcreteMediator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/template_cpp/ConcreteMediator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator/template_cpp/Mediator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/template_cpp/Mediator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator/template_java/Colleague.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/template_java/Colleague.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator/template_java/ConcreteColleague.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/template_java/ConcreteColleague.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator/template_java/ConcreteMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/template_java/ConcreteMediator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/template_java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mediator/template_java/Mediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/template_java/Mediator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Memento/template_cpp/Caretaker.h" beforeDir="false" afterPath="$PROJECT_DIR$/Memento/template_cpp/Caretaker.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Memento/template_cpp/Memento.h" beforeDir="false" afterPath="$PROJECT_DIR$/Memento/template_cpp/Memento.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Memento/template_cpp/Originator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Memento/template_cpp/Originator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Memento/template_java/Caretaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Memento/template_java/Caretaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Memento/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Memento/template_java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Memento/template_java/Memento.java" beforeDir="false" afterPath="$PROJECT_DIR$/Memento/template_java/Memento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Memento/template_java/Originator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Memento/template_java/Originator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Observer/template_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Observer/template_java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractFactory/description" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adapter/description" beforeDir="false" afterPath="$PROJECT_DIR$/Adapter/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridge/description" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Builder/description" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChainOfResponsability/description" beforeDir="false" afterPath="$PROJECT_DIR$/ChainOfResponsability/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/description" beforeDir="false" afterPath="$PROJECT_DIR$/Command/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Composite/description" beforeDir="false" afterPath="$PROJECT_DIR$/Composite/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator/description" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/description" beforeDir="false" afterPath="$PROJECT_DIR$/Facade/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryMethod/description" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryMethod/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flyweight/description" beforeDir="false" afterPath="$PROJECT_DIR$/Flyweight/description.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +62,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
@@ -184,7 +98,8 @@
       <workItem from="1708455731026" duration="1609000" />
       <workItem from="1708457371574" duration="1532000" />
       <workItem from="1708458934648" duration="3183000" />
-      <workItem from="1708633913214" duration="2655000" />
+      <workItem from="1708633913214" duration="4243000" />
+      <workItem from="1708725584623" duration="1668000" />
     </task>
     <task id="LOCAL-00001" summary="Added java templates">
       <option name="closed" value="true" />
@@ -217,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708461908597</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added comments to all files">
+      <created>1708637564497</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708637564497</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +160,7 @@
     <MESSAGE value="Added java templates" />
     <MESSAGE value="Added cpp templates" />
     <MESSAGE value="Added java templates and comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added java templates and comments" />
+    <MESSAGE value="Added comments to all files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments to all files" />
   </component>
 </project>
