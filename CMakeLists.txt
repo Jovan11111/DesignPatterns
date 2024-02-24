@@ -3,4 +3,4 @@ project(DesignPatterns)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(AbstractFactory )
+add_executable(main.cpp)
