@@ -9,19 +9,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0bff33d-3ef0-4ea2-aa2c-5a2aaa14db0b" name="Changes" comment="Added comments to all files">
+    <list default="true" id="f0bff33d-3ef0-4ea2-aa2c-5a2aaa14db0b" name="Changes" comment="Switched description files to md format">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractFactory/description" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractFactory/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adapter/description" beforeDir="false" afterPath="$PROJECT_DIR$/Adapter/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/description" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Builder/description" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChainOfResponsability/description" beforeDir="false" afterPath="$PROJECT_DIR$/ChainOfResponsability/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/description" beforeDir="false" afterPath="$PROJECT_DIR$/Command/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Composite/description" beforeDir="false" afterPath="$PROJECT_DIR$/Composite/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorator/description" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade/description" beforeDir="false" afterPath="$PROJECT_DIR$/Facade/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryMethod/description" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryMethod/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flyweight/description" beforeDir="false" afterPath="$PROJECT_DIR$/Flyweight/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterator/description" beforeDir="false" afterPath="$PROJECT_DIR$/Iterator/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mediator/description" beforeDir="false" afterPath="$PROJECT_DIR$/Mediator/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memento/description" beforeDir="false" afterPath="$PROJECT_DIR$/Memento/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observer/description" beforeDir="false" afterPath="$PROJECT_DIR$/Observer/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype/description" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proxy/description" beforeDir="false" afterPath="$PROJECT_DIR$/Proxy/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Singleton/description" beforeDir="false" afterPath="$PROJECT_DIR$/Singleton/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/State/description" beforeDir="false" afterPath="$PROJECT_DIR$/State/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strategy/description" beforeDir="false" afterPath="$PROJECT_DIR$/Strategy/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemplateMethod/description" beforeDir="false" afterPath="$PROJECT_DIR$/TemplateMethod/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,8 @@
       <workItem from="1708457371574" duration="1532000" />
       <workItem from="1708458934648" duration="3183000" />
       <workItem from="1708633913214" duration="4243000" />
-      <workItem from="1708725584623" duration="1668000" />
+      <workItem from="1708725584623" duration="2301000" />
+      <workItem from="1708771407262" duration="240000" />
     </task>
     <task id="LOCAL-00001" summary="Added java templates">
       <option name="closed" value="true" />
@@ -139,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708637564497</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Switched description files to md format">
+      <created>1708727293250</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708727293250</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +169,7 @@
     <MESSAGE value="Added cpp templates" />
     <MESSAGE value="Added java templates and comments" />
     <MESSAGE value="Added comments to all files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments to all files" />
+    <MESSAGE value="Switched description files to md format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switched description files to md format" />
   </component>
 </project>
