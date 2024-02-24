@@ -1,5 +1,5 @@
 # Software Design Patterns Study Guide
-This project is designed to be a comprehensive resource for understanding and implementing design patterns in C++ and Java. It was made in retrospect of the faculty course "Software Projecting", and the main goal is to make the study of design patterns easier for others. 
+This project is designed to be a comprehensive resource for understanding and implementing design patterns in C++ and Java. It was made in retrospect of the faculty course "Software Projecting", and the main goal is to make the study of design patterns easier. 
 
 Each design pattern is placed in its own directory (DIR), in which you will find:
 
