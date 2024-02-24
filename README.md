@@ -14,5 +14,3 @@ To use this project, simply clone the repository to your local machine, navigate
 
 If you have any questions, suggestions, or feedback, please open an issue or submit a pull request.
 
-# License
-This project is licensed under the MIT License.
